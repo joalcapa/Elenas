@@ -1,5 +1,5 @@
 import './App.css';
-import Kernel from './ElenasKernel';
+import Kernel from './kernel';
 import Login from './v1/scenes/auth/login';
 
 function App() {

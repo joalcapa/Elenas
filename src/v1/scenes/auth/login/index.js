@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {View} from 'react-native';
-import {useLogin, useUser} from '../../../../ElenasKernel';
+import {useLogin, useUser} from '../../../../kernel';
 
 import InputField from '../../../components/commons/InputField';
 import Button from '../../../components/commons/Button';
