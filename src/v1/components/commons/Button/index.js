@@ -5,23 +5,24 @@ import {TouchableOpacity, Text} from 'react-native';
 import styles from './styles';
 
 const Button = (props) => (
-        <TouchableOpacity 
-            onPress={props.onPress} 
-            style={[
-                styles.button_container,
-                props.isDefaultButton ? styles.default_button : {},
-                props.isGreenButton ? styles.green_button : {},
-            ]}
-        >
-            <Text style={styles.text}>{props.text}</Text>
-        </TouchableOpacity>
-    );
+    <TouchableOpacity 
+        onPress={props.isDisabled ? null : props.onPress} 
+        style={[
+            styles.button_container,
+            props.isDefaultButton ? styles.default_button : {},
+            props.isGreenButton ? styles.green_button : {},
+        ]}
+    >
+        <Text style={styles.text}>{props.text}</Text>
+    </TouchableOpacity>
+);
 
 Button.propTypes = {
     onPress: PropTypes.func,
     text: PropTypes.string,
     isDefaultButton: PropTypes.bool,
     isGreenButton: PropTypes.bool,
+    isDisabled: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -29,6 +30,7 @@ Button.defaultProps = {
     text: '',
     isDefaultButton: true,
     isGreenButton: false,
+    isDisabled: false,
 };
 
 export default Button;

@@ -1,11 +1,12 @@
 import './App.css';
-import List from './v1/scenes/logged/customers/list';
+import Kernel from './ElenasKernel';
+import Login from './v1/scenes/auth/login';
 
 function App() {
   return (
-    <div className="App">
-      <List/>
-    </div>
+    <Kernel>
+      <Login/>
+    </Kernel>
   );
 }
 
