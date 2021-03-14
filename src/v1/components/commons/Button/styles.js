@@ -6,8 +6,9 @@ const styles = StyleSheet.create({
     button_container: {
         borderRadius: '8px',
         paddingTop: '8px',
-        paddingBottom: '8px', 
-        maxWidth: '200px',
+        paddingBottom: '8px',
+        width: '100%', 
+        maxWidth: '150px',
         displayFlex: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
