@@ -1,6 +1,8 @@
 export const Colors = {
     C_FFFFFF: '#ffffff',
     C_4287f5: '#4287f5',
+    C_42f575: '#42f575',
+
 };
 
 export const FontSize = {

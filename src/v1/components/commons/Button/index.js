@@ -10,6 +10,7 @@ const Button = (props) => (
             style={[
                 styles.button_container,
                 props.isDefaultButton ? styles.default_button : {},
+                props.isGreenButton ? styles.green_button : {},
             ]}
         >
             <Text style={styles.text}>{props.text}</Text>
@@ -20,12 +21,14 @@ Button.propTypes = {
     onPress: PropTypes.func,
     text: PropTypes.string,
     isDefaultButton: PropTypes.bool,
+    isGreenButton: PropTypes.bool,
 };
 
 Button.defaultProps = {
     onPress: () => {},
     text: '',
     isDefaultButton: true,
+    isGreenButton: false,
 };
 
 export default Button;

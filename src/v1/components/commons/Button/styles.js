@@ -19,6 +19,9 @@ const styles = StyleSheet.create({
     default_button: {
         backgroundColor: Colors.C_4287f5,
     },
+    green_button: {
+        backgroundColor: Colors.C_42f575,
+    }
 });
 
 export default styles;
