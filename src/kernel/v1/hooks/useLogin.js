@@ -12,7 +12,7 @@ const useLogin = () => {
     const [Login, result] = useMutation(LOGIN);
 
     useEffect(() => {
-        if (!user) {
+        if (result && result.data && !user) {
             if (result.data.login && result.data.login.user) {
                 updateUser({
                     ...result.data.login.user,
