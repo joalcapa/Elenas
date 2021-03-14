@@ -6,4 +6,4 @@ const Edit = () => {
     return null;
 };
 
-export default BaseCustomer(Edit, 'Editar Cliente');
+export default BaseCustomer(Edit, 'Editar Cliente', {isListButton: true});

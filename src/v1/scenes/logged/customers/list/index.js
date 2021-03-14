@@ -4,16 +4,14 @@ import {View} from 'react-native';
 import BaseCustomer from '../baseCustomers';
 import Button from '../../../../components/commons/Button';
 
-import style from './styles';
+import styles from './styles';
 
 const List = () => {
     return (
-        <View style={style.container}>
-            <View style={style.button_content}>
-                <Button text='CREAR CLIENTE'/>
-            </View>
+        <View style={styles.container}>
+        
         </View>
     );
 };
 
-export default BaseCustomer(List, 'Lista de clientes');
+export default BaseCustomer(List, 'Lista de clientes', {isCreateButton: true});

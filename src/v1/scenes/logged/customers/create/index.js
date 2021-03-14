@@ -6,4 +6,4 @@ const Create = () => {
     return null;
 };
 
-export default BaseCustomer(Create, 'Crear Cliente');
+export default BaseCustomer(Create, 'Crear Cliente', {isListButton: true});
