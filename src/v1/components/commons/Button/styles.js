@@ -4,15 +4,17 @@ import {Colors} from '../../../resources';
 
 const styles = StyleSheet.create({
     button_container: {
-        borderRadius: '4px',
-        paddingLeft: '8px',
-        paddingRight: '8px',
-        paddingTop: '4px',
-        paddingBottom: '4px', 
+        borderRadius: '8px',
+        paddingTop: '8px',
+        paddingBottom: '8px', 
+        maxWidth: '200px',
+        displayFlex: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     text: {
         fontSize: '14px',
-        color: Colors.C_FFFFFF,
+        color: '#ffffff',
     },
     default_button: {
         backgroundColor: Colors.C_4287f5,
