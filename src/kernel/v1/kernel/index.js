@@ -13,6 +13,7 @@ const Kernel = (props) => {
     const {UserProvider, useUser} = userContext(useStorage);
 
     config.getInstance().setConfiguration({
+        storage,
         useUser,
         env: {},
     });
