@@ -4,20 +4,17 @@ import {TouchableOpacity, Text} from 'react-native';
 
 import styles from './styles';
 
-const Button = (props) => {
-    const {onPress, text, isDefaultButton} = props;
-    return (
+const Button = (props) => (
         <TouchableOpacity 
-            onPress={onPress} 
+            onPress={props.onPress} 
             style={[
                 styles.button_container,
-                isDefaultButton ? styles.default_button : {},
+                props.isDefaultButton ? styles.default_button : {},
             ]}
         >
-            <Text>{text}</Text>
+            <Text>{props.text}</Text>
         </TouchableOpacity>
     );
-};
 
 Button.propTypes = {
     onPress: PropTypes.func,
