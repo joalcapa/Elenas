@@ -6,4 +6,4 @@ const Edit = () => {
     return null;
 };
 
-export default BaseCustomer(Edit);
+export default BaseCustomer(Edit, 'Editar Cliente');

@@ -6,4 +6,4 @@ const Create = () => {
     return null;
 };
 
-export default BaseCustomer(Create);
+export default BaseCustomer(Create, 'Crear Cliente');

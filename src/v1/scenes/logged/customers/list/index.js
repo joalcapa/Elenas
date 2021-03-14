@@ -6,4 +6,4 @@ const List = () => {
     return null;
 };
 
-export default BaseCustomer(List);
+export default BaseCustomer(List, 'Lista de clientes');
