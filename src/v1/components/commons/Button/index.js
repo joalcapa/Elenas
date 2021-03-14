@@ -11,6 +11,7 @@ const Button = (props) => (
             styles.button_container,
             props.isDefaultButton ? styles.default_button : {},
             props.isGreenButton ? styles.green_button : {},
+            props.isDisabled ? styles.disabled_button : {},
         ]}
     >
         <Text style={styles.text}>{props.text}</Text>
