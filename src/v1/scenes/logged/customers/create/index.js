@@ -2,8 +2,8 @@ import React from 'react';
 
 import BaseCustomer from '../baseCustomers';
 
-const List = () => {
+const Create = () => {
     return null;
 };
 
-export default BaseCustomer(List);
+export default BaseCustomer(Create);
