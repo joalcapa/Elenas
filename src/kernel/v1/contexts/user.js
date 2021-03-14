@@ -40,8 +40,7 @@ const user = (useStorage) => {
 
         const updateUser = useCallback(
             (newValue) => {
-                let userPayload = {};
-                update(userPayload);
+                update(newValue);
             },
             [user, update],
         );

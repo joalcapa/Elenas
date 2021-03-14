@@ -14,6 +14,7 @@ const Login = () => {
         cellphone,
         password,
         isValidForm,
+        isError,
         changeCellphone,
         changePassword,
         login,
@@ -57,6 +58,11 @@ const Login = () => {
                     onPress={login} 
                 />
             </View>
+            {isError && (
+                <View style={styles.input_content}>
+                    <TextField text={'Hubo un error, intenta mas tarde'} />
+                </View>
+            )}
         </View>
         </View>
     );
