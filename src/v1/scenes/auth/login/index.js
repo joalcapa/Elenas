@@ -4,7 +4,7 @@ import {useLogin, useUser} from '../../../../kernel';
 
 import InputField from '../../../components/commons/InputField';
 import Button from '../../../components/commons/Button';
-import TextField, {EXTRA_TYPE} from '../../../components/commons/TextField';
+import TextField, {BIG_TYPE} from '../../../components/commons/TextField';
 
 import styles from './styles';
 
@@ -33,7 +33,7 @@ const Login = () => {
                 <TextField 
                     isTitle 
                     text="Inicio de sesión" 
-                    type={EXTRA_TYPE}
+                    type={BIG_TYPE}
                 />
             </View>
             <View style={styles.input_content}>
