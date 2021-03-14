@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {Colors} from '../../../resources';
+import {Colors, FontSize} from '../../../resources';
 
 const styles = StyleSheet.create({
     button_container: {
@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: {
-        fontSize: '14px',
-        color: '#ffffff',
+        fontSize: FontSize.normal,
+        color: Colors.C_FFFFFF,
     },
     default_button: {
         backgroundColor: Colors.C_4287f5,
