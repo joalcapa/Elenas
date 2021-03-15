@@ -1,0 +1,161 @@
+{
+  "description": "Este componente permite enviar el formulario para crear o editar un cliente.",
+  "displayName": "Form",
+  "methods": [],
+  "props": {
+    "firstName": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor del nombre.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "lastName": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor del apellido.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "cedula": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor de la cedula.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "email": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor del correo.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "cellphone": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor del telefono.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "address": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor de la direccion.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "isValidForm": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Define si el formulario es valido para enviar.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    },
+    "changeFirstName": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambia el valor del nombre.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changeLastName": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambia el valor del apellido.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changeCedula": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambia el valor de la cedula.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changeEmail": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambia el valor del correo.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changeCellphone": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambia el valor del telefono.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changeAddress": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambia el valor de la direccion.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "createCustomer": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que envia el formulario.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    }
+  }
+}
