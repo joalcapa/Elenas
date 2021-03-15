@@ -58,17 +58,6 @@
         "computed": false
       }
     },
-    "address": {
-      "type": {
-        "name": "string"
-      },
-      "required": false,
-      "description": "Valor de la direccion.",
-      "defaultValue": {
-        "value": "''",
-        "computed": false
-      }
-    },
     "isValidForm": {
       "type": {
         "name": "bool"
@@ -130,17 +119,6 @@
       },
       "required": false,
       "description": "Funcion que cambia el valor del telefono.",
-      "defaultValue": {
-        "value": "() => {}",
-        "computed": false
-      }
-    },
-    "changeAddress": {
-      "type": {
-        "name": "func"
-      },
-      "required": false,
-      "description": "Funcion que cambia el valor de la direccion.",
       "defaultValue": {
         "value": "() => {}",
         "computed": false

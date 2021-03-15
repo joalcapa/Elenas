@@ -9,6 +9,7 @@ const useCustomers = (isEdit = false) => {
     //const [ClientsSearch, resultClientSearch] = useMutation(CLIENTS_SEARCH);
     const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
 
+    const [isAddressSelect, setAddressSelect] = useState(false);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [cedula, setCedula] = useState('');
@@ -81,6 +82,14 @@ const useCustomers = (isEdit = false) => {
         setError(false);
     };
 
+    const nextAddressSelect = () => {
+        setAddressSelect(true);
+    };
+
+    const nextForm = () => {
+        setAddressSelect(false);
+    };
+
     const createCustomer = useCallback(async () => {
             try {
                 await CreateClient({
@@ -91,14 +100,13 @@ const useCustomers = (isEdit = false) => {
                             email,
                             cellphone,
                             cedula,
-                            address,
                         },
                     },
                 });
             } catch (error) {
                 setError(true);
             }
-    }, [firstName, lastName, cedula, email, cellphone, address]);
+    }, [firstName, lastName, cedula, email, cellphone]);
 
     return {
         states,
@@ -121,9 +129,11 @@ const useCustomers = (isEdit = false) => {
             cedula &&
             email &&
             cellphone &&
-            address &&
             !isError
         ),
+        isAddressSelect,
+        nextForm,
+        nextAddressSelect,
         changeCountry,
         changeStateId,
         changeStateShortCode,

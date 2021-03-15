@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import BaseCustomer from '../BaseCustomers';
-import {Form} from './components';
+import {Form, AddressForm} from './components';
 import {useCustomers} from '../../../../../kernel';
 
 /**
@@ -11,6 +11,11 @@ import {useCustomers} from '../../../../../kernel';
 export const Create = (props) => {
     const {isEdit} = props;
     const hook = useCustomers(isEdit);
+    const {isAddressSelect} = hook;
+
+    if (isAddressSelect) {
+        return <AddressForm {...hook} />;
+    }
 
     return <Form {...hook} />;
 };

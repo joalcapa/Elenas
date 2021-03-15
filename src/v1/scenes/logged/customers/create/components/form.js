@@ -9,12 +9,7 @@ import styles from '../styles';
 /**
  * Este componente permite enviar el formulario para crear o editar un cliente.
  */
-const Form = (props) => {
-    const {states} = props;
-
-    console.log('States: ', states);
-
-    return (
+const Form = (props) => (
         <View style={styles.container}>
             <View style={styles.content}>
                 <View style={styles.input_content}>
@@ -52,13 +47,6 @@ const Form = (props) => {
                         onChangeText={props.changeCellphone}
                     />
                 </View>
-                <View style={styles.input_content}>
-                    <InputField
-                        placeholder="Direccion"
-                        value={props.address}
-                        onChangeText={props.changeAddress}
-                    />
-                </View>
                 <View style={styles.button_content}>
                     <Button
                         isDisabled={!props.isValidForm}
@@ -69,13 +57,8 @@ const Form = (props) => {
             </View>
         </View>
     );
-};
 
 Form.propTypes = {
-    /**
-     * Array de los estados y sus ciudades.
-     */
-    states: PropTypes.array,
     /**
      * Valor del nombre.
      */
@@ -96,10 +79,6 @@ Form.propTypes = {
      * Valor del telefono.
      */
     cellphone: PropTypes.string,
-    /**
-     * Valor de la direccion.
-     */
-    address: PropTypes.string,
     /**
      * Define si el formulario es valido para enviar.
      */
@@ -124,10 +103,6 @@ Form.propTypes = {
      * Funcion que cambia el valor del telefono.
      */
     changeCellphone: PropTypes.func,
-    /**
-     * Funcion que cambia el valor de la direccion.
-     */
-    changeAddress: PropTypes.func,
     /**
      * Funcion que envia el formulario.
      */
