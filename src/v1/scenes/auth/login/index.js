@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {useHistory} from "react-router-dom";
 import {useLogin, useUser} from '../../../../kernel';
 
 import Form from './components/form';
@@ -8,11 +9,12 @@ import Form from './components/form';
  */
 const Login = () => {
     const {user} = useUser();
+    let history = useHistory();
     const hook = useLogin();
 
     useEffect(() => {
         if (user) {
-            // logged user
+            history.push("/");
         }
     }, [user]);
 
