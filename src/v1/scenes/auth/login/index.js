@@ -8,6 +8,9 @@ import TextField, {BIG_TYPE} from '../../../components/commons/TextField';
 
 import styles from './styles';
 
+/**
+ * Este componente permite hacer login y guardar la informacion del usuario en el storage.
+ */
 const Login = () => {
     const {user} = useUser();
     const {

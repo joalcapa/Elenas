@@ -7,7 +7,6 @@ import styles from './styles';
 /**
  * Este componente renderiza un input basico.
  */
-
 const InputField = (props) => <TextInput {...props} style={styles.input}/>;
 
 InputField.propTypes = {
@@ -22,7 +21,7 @@ InputField.defaultProps = {
      */
     value: '',
     /**
-     * Informacion que identifica al input
+     * Informacion que identifica al input.
      */
     placeholder: '',
     /**

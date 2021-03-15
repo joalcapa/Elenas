@@ -7,6 +7,9 @@ import BaseCustomer from '../baseCustomers';
 
 import styles from './styles';
 
+/**
+ * Este componente permite listar los clientes.
+ */
 const List = () => {
     const clientes = [
         {

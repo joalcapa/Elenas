@@ -9,6 +9,9 @@ import Button from '../../../../components/commons/Button';
 
 import styles from './styles';
 
+/**
+ * Este componente permite crear un cliente.
+ */
 export const Create = (props) => {
     const {isEdit} = props;
     const {
@@ -86,6 +89,9 @@ export const Create = (props) => {
 };
 
 Create.propTypes = {
+    /**
+     * Define si el componente funciona como editor de un cliente ya creado, en caso contrario creara un nuevo cliente.
+     */
     isEdit: PropTypes.bool,
 };
 

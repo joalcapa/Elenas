@@ -12,6 +12,10 @@ export const EXTRA_TYPE = 'extra';
 export const BIG_TYPE = 'big';
 export const HIGH_TYPE = 'high';
 
+/**
+ * Este componente renderiza un texto basico
+ */
+
 const TextField = (props) => (
     <Text style={[
         {fontSize: FontSize[props.type]},
@@ -20,8 +24,17 @@ const TextField = (props) => (
 );
 
 TextField.propTypes = {
+    /**
+     * Texto del TextField
+     */
     text: PropTypes.string,
+    /**
+     * Define el tamaño del texto
+     */
     type: PropTypes.string,
+    /**
+     * Define el grosor del texto
+     */    
     isTitle: PropTypes.bool,
 };
 

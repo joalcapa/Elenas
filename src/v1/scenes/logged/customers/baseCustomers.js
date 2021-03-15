@@ -5,6 +5,9 @@ import {View, StyleSheet} from 'react-native';
 import Button from '../../../components/commons/Button';
 import TextField, {BIG_TYPE} from '../../../components/commons/TextField';
 
+/**
+ * Este componente permite decorar una escena para mostrar un titulo y un boton de navegacion hacia las escenas crear o listar clientes.
+ */
 const BaseCustomer = (props) => {
     const {title, Child, stackProps, options} = props;
     return (
@@ -35,12 +38,24 @@ const BaseCustomer = (props) => {
 };
 
 BaseCustomer.propTypes = {
+    /**
+     * Titulo de la escena
+     */
     title: PropTypes.string,
+    /**
+     * Componente a renderizar (Create, List, Edit).
+     */
     Child: PropTypes.any,
+    /**
+     * Opciones que definen que boton de navegacion mostrar.
+     */
     options: PropTypes.shape({
         isCreateButton: PropTypes.bool,
         isListButton: PropTypes.bool,
     }),
+    /**
+     * Propiedades de pila (react navigation...)
+     */
     stackProps: PropTypes.shape({}),
 };
 
