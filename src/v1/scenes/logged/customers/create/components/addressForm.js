@@ -47,7 +47,7 @@ const AddressForm = (props) => (
             />
         </View>
         <Button
-            text={'CREAR'}
+            text={props.isEdit ? 'EDITAR' : 'CREAR'}
             onPress={props.createCustomer}
             isDisabled={!props.isValidAddressForm}
         />
@@ -67,6 +67,7 @@ AddressForm.propTypes = {
     changeCountry: PropTypes.func,
     createCustomer: PropTypes.func,
     isValidAddressForm: PropTypes.bool,
+    isEdit: PropTypes.bool,
 };
 
 AddressForm.defaultProps = {
@@ -82,6 +83,7 @@ AddressForm.defaultProps = {
     changeCountry: () => {},
     createCustomer: () => {},
     isValidAddressForm: false,
+    isEdit: false,
 };
 
 export default AddressForm;

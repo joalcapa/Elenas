@@ -19,3 +19,12 @@ export const CREATE_CLIENT = gql`
     }
   }
 `;
+
+export const UPDATE_CLIENT = gql`
+  ${CLIENT_FIELDS}
+  mutation UpdateClient($id: Int!, $input: ClientInput!) {
+    updateClient(id: $id, input: $input) {
+      ...clientFields
+    }
+  }
+`;

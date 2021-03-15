@@ -26,18 +26,20 @@ const Form = (props) => (
                         onChangeText={props.changeLastName}
                     />
                 </View>
+                {!props.isEdit && (
+                    <View style={styles.input_content}>
+                        <InputField
+                            placeholder="Email"
+                            value={props.email}
+                            onChangeText={props.changeEmail}
+                        />
+                    </View>
+                )}
                 <View style={styles.input_content}>
                     <InputField
                         placeholder="Cedula"
                         value={props.cedula}
                         onChangeText={props.changeCedula}
-                    />
-                </View>
-                <View style={styles.input_content}>
-                    <InputField
-                        placeholder="Email"
-                        value={props.email}
-                        onChangeText={props.changeEmail}
                     />
                 </View>
                 <View style={styles.input_content}>
@@ -84,6 +86,10 @@ Form.propTypes = {
      */
     isValidForm: PropTypes.bool,
     /**
+     * Define si el formulario es para edicion.
+     */
+    isEdit: PropTypes.bool,
+    /**
      * Funcion que cambia el valor del nombre.
      */
     changeFirstName: PropTypes.func,
@@ -118,6 +124,7 @@ Form.defaultProps = {
     cellphone: '',
     address: '',
     isValidForm: false,
+    isEdit: false,
     changeFirstName: () => {},
     changeLastName: () => {},
     changeCedula: () => {},

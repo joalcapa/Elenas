@@ -2,13 +2,14 @@ import {useState, useCallback, useEffect} from 'react';
 import {useMutation, useQuery} from '@apollo/client';
 
 import useStates from './useStates';
-import {CREATE_CLIENT} from '../gql/mutations';
+import {CREATE_CLIENT, UPDATE_CLIENT} from '../gql/mutations';
 import {CLIENTS_SEARCH} from '../gql/queries';
 
-const useCustomers = (isEdit = false, onSuccessful = () => {}) => {
+const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') => {
     const {states} = useStates();
-    const clientsSearch = useQuery(CLIENTS_SEARCH);
+    const clientsSearch = useQuery(CLIENTS_SEARCH, customerId !== '' ? {variables: {ids: [parseInt(customerId)]}} : null);
     const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
+    const [UpdateClient, resultUpdateClient] = useMutation(UPDATE_CLIENT);
 
     const [isAddressSelect, setAddressSelect] = useState(false);
     const [firstName, setFirstName] = useState('');
@@ -27,6 +28,23 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}) => {
     const [isError, setError] = useState(false);
     const [statesForm, setStatesForm] = useState([]);
     const [citiesForm, setCitiesForm] = useState([]);
+
+    useEffect(() => {
+        if (
+            isEdit &&
+            clientsSearch &&
+            clientsSearch.data &&
+            clientsSearch.data.clientsSearch &&
+            clientsSearch.data.clientsSearch.results
+        ) {
+            const client = clientsSearch.data.clientsSearch.results[0];
+            changeFirstName(client.firstName);
+            changeLastName(client.lastName);
+            changeCellphone(client.cellphone);
+            changeEmail('client.email');
+            changeCedula(client.cedula);
+        }
+    }, [clientsSearch]);
 
     useEffect(() => {
         if (statesForm.length === 0) {
@@ -51,6 +69,16 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}) => {
             onSuccessful();
         }
     }, [resultCreateClient]);
+
+    useEffect(() => {
+        if (
+            resultUpdateClient &&
+            resultUpdateClient.data &&
+            resultUpdateClient.data.updateClient
+        ) {
+            onSuccessful();
+        }
+    }, [resultUpdateClient]);
 
     const onSelectStateForm = (selectState) => {
         setCitiesForm(
@@ -142,29 +170,53 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}) => {
 
     const createCustomer = useCallback(async () => {
             try {
-                await CreateClient({
-                    variables: {
-                        input: {
-                            firstName,
-                            lastName,
-                            email,
-                            cellphone,
-                            cedula,
-                            address: {
-                                streetAddress,
-                                city,
-                                cityId,
-                                stateShortCode,
-                                stateId,
-                                country,
+                if (isEdit) {
+                    await UpdateClient({
+                        variables: {
+                            id: parseInt(customerId),
+                            input: {
+                                firstName,
+                                lastName,
+                                email,
+                                cellphone,
+                                cedula,
+                                address: {
+                                    streetAddress,
+                                    city,
+                                    cityId,
+                                    stateShortCode,
+                                    stateId,
+                                    country,
+                                },
                             },
                         },
-                    },
-                });
+                    });
+                } else {
+                    await CreateClient({
+                        variables: {
+                            input: {
+                                firstName,
+                                lastName,
+                                email,
+                                cellphone,
+                                cedula,
+                                address: {
+                                    streetAddress,
+                                    city,
+                                    cityId,
+                                    stateShortCode,
+                                    stateId,
+                                    country,
+                                },
+                            },
+                        },
+                    });
+                }
             } catch (error) {
                 setError(true);
             }
     }, [
+        isEdit,
         firstName,
         lastName,
         cedula,

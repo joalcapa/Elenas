@@ -10,9 +10,9 @@ import {Form, AddressForm} from './components';
  * Este componente permite crear o editar un cliente.
  */
 export const Create = (props) => {
-    const {isEdit} = props;
+    const {isEdit, customerId} = props;
     const [isNewCustomer, setNewCustomer] = useState(false);
-    const hook = useCustomers(isEdit, () => setNewCustomer(true));
+    const hook = useCustomers(isEdit, () => setNewCustomer(true), customerId);
     const {isAddressSelect} = hook;
 
     if (isNewCustomer) {
@@ -29,10 +29,10 @@ export const Create = (props) => {
     }
 
     if (isAddressSelect) {
-        return <AddressForm {...hook} />;
+        return <AddressForm {...hook} isEdit={isEdit} />;
     }
 
-    return <Form {...hook} />;
+    return <Form {...hook} isEdit={isEdit} />;
 };
 
 Create.propTypes = {
@@ -40,10 +40,12 @@ Create.propTypes = {
      * Define si el componente funciona como editor de un cliente ya creado, en caso contrario creara un nuevo cliente.
      */
     isEdit: PropTypes.bool,
+    customerId: PropTypes.string,
 };
 
 Create.defaultProps = {
     isEdit: false,
+    customerId: '',
 };
 
 export default BaseCustomer(Create, 'Crear Cliente', {isListButton: true});
