@@ -6,7 +6,7 @@ const useStates = () => {
     const {data} = useQuery(STATES);
 
     return {
-        states: data.states ? data.states : [],
+        states: data && data.states ? data.states : [],
     };
 };
 

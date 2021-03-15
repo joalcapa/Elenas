@@ -9,7 +9,7 @@ const useCustomers = (isEdit = false) => {
     //const [ClientsSearch, resultClientSearch] = useMutation(CLIENTS_SEARCH);
     const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
 
-    const [isAddressSelect, setAddressSelect] = useState(false);
+    const [isAddressSelect, setAddressSelect] = useState(true);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [cedula, setCedula] = useState('');
