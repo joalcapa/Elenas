@@ -1,0 +1,847 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component render empty form component 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-height-i7wkem r-justifyContent-1777fci"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-justifyContent-1777fci r-maxWidth-z7pwl0 r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Nombres"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Apellidos"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Cedula"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Email"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Telefono"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-oyv1ms r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          CREAR
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Form component render form component with cedula 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-height-i7wkem r-justifyContent-1777fci"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-justifyContent-1777fci r-maxWidth-z7pwl0 r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Nombres"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Apellidos"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Cedula"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value="15151212151"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Email"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Telefono"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-oyv1ms r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          CREAR
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Form component render form component with cellphone 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-height-i7wkem r-justifyContent-1777fci"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-justifyContent-1777fci r-maxWidth-z7pwl0 r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Nombres"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Apellidos"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Cedula"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Email"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Telefono"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value="+5732485855"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-oyv1ms r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          CREAR
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Form component render form component with email 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-height-i7wkem r-justifyContent-1777fci"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-justifyContent-1777fci r-maxWidth-z7pwl0 r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Nombres"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Apellidos"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Cedula"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Email"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value="email@email.com"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Telefono"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-oyv1ms r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          CREAR
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Form component render form component with firstName 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-height-i7wkem r-justifyContent-1777fci"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-justifyContent-1777fci r-maxWidth-z7pwl0 r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Nombres"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value="FirstName test"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Apellidos"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Cedula"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Email"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Telefono"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-oyv1ms r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          CREAR
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Form component render form component with lastName 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-height-i7wkem r-justifyContent-1777fci"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-eqz5dr r-justifyContent-1777fci r-maxWidth-z7pwl0 r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Nombres"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Apellidos"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value="LastName test"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Cedula"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Email"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingTop-m611by"
+    >
+      <input
+        autoCapitalize="sentences"
+        autoComplete="on"
+        autoCorrect="on"
+        className="css-textinput-11aywtz r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-width-13qz1uu"
+        dir="auto"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onSelect={[Function]}
+        placeholder="Telefono"
+        readOnly={false}
+        spellCheck={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1mi0q7o r-paddingTop-m611by r-width-13qz1uu"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-oyv1ms r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          CREAR
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

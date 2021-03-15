@@ -35,11 +35,6 @@ describe('Form component', () => {
         expect(tree).toMatchSnapshot();
     });
 
-    test('render form component with address', () => {
-        const tree = create(<Form address={'address'} />).toJSON();
-        expect(tree).toMatchSnapshot();
-    });
-
     test('render form component with cedula', () => {
         const tree = create(<Form cedula={'15151212151'} />).toJSON();
         expect(tree).toMatchSnapshot();
@@ -86,17 +81,6 @@ describe('Form component', () => {
         );
 
         wrapper.find(InputField).at(2).props().onChangeText('value');
-        expect(onPressEvent.mock.results[0].value).toBe('Link on press invoked');
-    });
-
-    test('onChangeText address functionality', () => {
-        const onPressEvent = jest.fn();
-        onPressEvent.mockReturnValue('Link on press invoked');
-        const wrapper = shallow(
-            <Form changeAddress={onPressEvent} />,
-        );
-
-        wrapper.find(InputField).at(5).props().onChangeText('value');
         expect(onPressEvent.mock.results[0].value).toBe('Link on press invoked');
     });
 
