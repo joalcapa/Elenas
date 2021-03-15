@@ -26,15 +26,13 @@ export const CLIENTS_SEARCH_FIELDS = gql`
 `;
 
 export const CLIENT_FIELDS = gql`
-  fragment clientFields on ClientResult {
-    Client {
-        id
-        firstName
-        lastName
-        cedula
-        address
-        cellphone
-        email
-    }
+  fragment clientFields on Client {
+    id
+    firstName
+    lastName
+    cedula
+    address
+    cellphone
+    email
   }
 `;

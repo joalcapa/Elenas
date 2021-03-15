@@ -26,9 +26,9 @@ export const CLIENTS_SEARCH = gql`
 
 export const CREATE_CLIENT = gql`
 ${CLIENT_FIELDS}
-mutation CreateClient($input: ClientInput!) {
-  createClient(input: $input) {
-    ...clientFields
+  mutation CreateClient($input: ClientInput!) {
+    createClient(input: $input) {
+      ...clientFields
+    }
   }
-}
 `;

@@ -4,7 +4,7 @@ import {useMutation} from '@apollo/client';
 import {CLIENTS_SEARCH, CREATE_CLIENT} from '../gql/mutations';
 
 const useCustomers = () => {
-    const [ClientsSearch, resultClientSearch] = useMutation(CLIENTS_SEARCH);
+    //const [ClientsSearch, resultClientSearch] = useMutation(CLIENTS_SEARCH);
     const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
 
     const [firstName, setFirstName] = useState('');
@@ -50,22 +50,22 @@ const useCustomers = () => {
     };
 
     const createCustomer = useCallback(async () => {
-        try {
-            await createCustomer({
-                variables: {
-                    input: {
-                        firstName,
-                        lastName,
-                        email,
-                        cellphone,
-                        cedula,
-                        address,
+            try {
+                await CreateClient({
+                    variables: {
+                        input: {
+                            firstName,
+                            lastName,
+                            email,
+                            cellphone,
+                            cedula,
+                            address,
+                        },
                     },
-                },
-            });
-        } catch (error) {
-            setError(true);
-        }
+                });
+            } catch (error) {
+                setError(true);
+            }
     }, [firstName, lastName, cedula, email, cellphone, address]);
 
     return {
