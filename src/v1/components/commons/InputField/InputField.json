@@ -1,0 +1,40 @@
+{
+  "description": "Este componente renderiza un input basico.",
+  "displayName": "InputField",
+  "methods": [],
+  "props": {
+    "value": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "placeholder": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "onChangeText": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    }
+  }
+}
