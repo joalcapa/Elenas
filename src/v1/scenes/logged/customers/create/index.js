@@ -1,62 +1,81 @@
 import React from 'react';
 import {View} from 'react-native';
 
+import {useCustomers} from '../../../../../kernel';
 import BaseCustomer from '../baseCustomers';
-import styles from './styles';
-import TextField, {BIG_TYPE} from '../../../../components/commons/TextField';
 import InputField from '../../../../components/commons/InputField';
 import Button from '../../../../components/commons/Button';
 
+import styles from './styles';
+
 const Create = () => {
+    const {
+        firstName, 
+        lastName,
+        cedula,
+        email,
+        cellphone,
+        address,
+        isValidForm,
+        changeFirstName,
+        changeLastName,
+        changeCedula,
+        changeEmail,
+        changeCellphone,
+        changeAddress,
+        createCustomer,
+    } = useCustomers();
+
     return(
         <View style={styles.container}>
             <View style={styles.content}>
                 <View style={styles.input_content}>
                     <InputField
-                        placeholder=""
-                        value=""
-                        onChange={() => {}}
+                        placeholder="Nombres"
+                        value={firstName}
+                        onChangeText={changeFirstName}
                     />
                 </View>
                 <View style={styles.input_content}>
                     <InputField
-                        placeholder=""
-                        value=""
-                        onChange={() => {}}
+                        placeholder="Apellidos"
+                        value={lastName}
+                        onChangeText={changeLastName}
                     />
                 </View>
                 <View style={styles.input_content}>
                     <InputField
-                        placeholder=""
-                        value=""
-                        onChange={() => {}}
+                        placeholder="Cedula"
+                        value={cedula}
+                        onChangeText={changeCedula}
                     />
                 </View>
                 <View style={styles.input_content}>
                     <InputField
-                        placeholder=""
-                        value=""
-                        onChange={() => {}}
+                        placeholder="Email"
+                        value={email}
+                        onChangeText={changeEmail}
                     />
                 </View>
                 <View style={styles.input_content}>
                     <InputField
-                        placeholder=""
-                        value=""
-                        onChange={() => {}}
+                        placeholder="Telefono"
+                        value={cellphone}
+                        onChangeText={changeCellphone}
                     />
                 </View>
                 <View style={styles.input_content}>
                     <InputField
-                        placeholder=""
-                        value=""
-                        onChange={() => {}}
+                        placeholder="Direccion"
+                        value={address}
+                        onChangeText={changeAddress}
                     />
                 </View>
                 <View style={styles.button_content}>
                     <Button
+                        isDisabled={isValidForm}
                         text="CREAR"
-                        onPress={() => {}}
+                        onPress={createCustomer}
                     />
                 </View>
             </View>
