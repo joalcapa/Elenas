@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {View} from 'react-native';
 
 import {useCustomers} from '../../../../../kernel';
@@ -8,7 +9,8 @@ import Button from '../../../../components/commons/Button';
 
 import styles from './styles';
 
-const Create = () => {
+export const Create = (props) => {
+    const {isEdit} = props;
     const {
         firstName, 
         lastName,
@@ -24,7 +26,7 @@ const Create = () => {
         changeCellphone,
         changeAddress,
         createCustomer,
-    } = useCustomers();
+    } = useCustomers(isEdit);
 
     return(
         <View style={styles.container}>
@@ -81,6 +83,14 @@ const Create = () => {
             </View>
         </View>
     );
+};
+
+Create.propTypes = {
+    isEdit: PropTypes.bool,
+};
+
+Create.defaultProps = {
+    isEdit: false,
 };
 
 export default BaseCustomer(Create, 'Crear Cliente', {isListButton: true});
