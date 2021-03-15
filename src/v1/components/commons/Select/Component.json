@@ -1,0 +1,73 @@
+{
+  "description": "",
+  "displayName": "Component",
+  "methods": [],
+  "props": {
+    "value": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor del select.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "options": {
+      "type": {
+        "name": "array"
+      },
+      "required": false,
+      "description": "Opciones del select.",
+      "defaultValue": {
+        "value": "[]",
+        "computed": false
+      }
+    },
+    "onSelect": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que devuelve el dato seleccionado.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "showSelect": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que muestra el selector (Modal).",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "hiddenSelect": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que oculta el selector (Modal).",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "isVisibleSelect": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Determina si el selector se encuentra visible.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    }
+  }
+}
