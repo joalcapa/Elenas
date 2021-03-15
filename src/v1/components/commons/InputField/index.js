@@ -4,6 +4,10 @@ import {TextInput} from 'react-native';
 
 import styles from './styles';
 
+/**
+ * Este componente renderiza un input basico.
+ */
+
 const InputField = (props) => <TextInput {...props} style={styles.input}/>;
 
 InputField.propTypes = {
@@ -13,8 +17,17 @@ InputField.propTypes = {
 };
 
 InputField.defaultProps = {
+    /**
+     * Valor del input.
+     */
     value: '',
+    /**
+     * Informacion que identifica al input
+     */
     placeholder: '',
+    /**
+     * Funcion que modifica el valor del input.
+     */
     onChangeText: () => {},
 };
 
