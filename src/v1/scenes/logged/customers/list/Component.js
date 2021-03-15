@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {useHistory} from 'react-router-dom';
 import {View} from 'react-native';
 
 import TextField, {EXTRA_TYPE} from '../../../../components/commons/TextField';
@@ -63,13 +64,25 @@ ItemList.defaultProps = {
     onPress: () => {},
 };
 
-const Component = (props) => (
+const Component = (props) => {
+    let history = useHistory();
+
+    const toCustomerEdit = (id) => {
+        history.push(`/customer/${id}`);
+    };
+
+    return (
         <View style={styles.container}>
             <ItemList />
             {props.customers.map((customer) =>
-                <ItemList {...customer} onPress={() => {}} />)}
+                <ItemList 
+                    isEdit 
+                    {...customer} 
+                    onPress={() => toCustomerEdit(customer.id)} 
+                />)}
         </View>
-);
+    );
+};
 
 Component.propTypes = {
     customers: PropTypes.array,

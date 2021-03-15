@@ -29,6 +29,7 @@ const Form = (props) => (
             </View>
             <View style={styles.input_content}>
                 <InputField
+                    isPassword
                     placeholder="Contraseña"
                     value={props.password}
                     onChangeText={props.changePassword}

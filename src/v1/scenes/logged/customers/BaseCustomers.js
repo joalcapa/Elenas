@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {useHistory} from 'react-router-dom';
 import {View, StyleSheet} from 'react-native';
+
 
 import Button from '../../../components/commons/Button';
 import TextField, {BIG_TYPE} from '../../../components/commons/TextField';
@@ -10,6 +12,16 @@ import TextField, {BIG_TYPE} from '../../../components/commons/TextField';
  */
 const BaseCustomer = (props) => {
     const {title, Child, stackProps, options} = props;
+    let history = useHistory();
+
+    const toCustomerList = () => {
+        history.push("/");
+    };
+
+    const toCustomerCreate = () => {
+        history.push("/customer");
+    };
+
     return (
         <View style={styles.container}>
             <View style={styles.nav_buttons}>
@@ -22,11 +34,17 @@ const BaseCustomer = (props) => {
                 <View style={styles.buttons_container}>
                     {options.isCreateButton && (
                         <View style={styles.button_content}>
-                            <Button text='CREAR CLIENTE'/>
+                            <Button 
+                                text='CREAR CLIENTE' 
+                                onPress={toCustomerCreate}
+                            />
                         </View>)}
                     {options.isListButton && (
                         <View style={styles.button_content}>
-                            <Button text='LISTA DE CLIENTES'/>
+                            <Button 
+                                text='LISTA DE CLIENTES' 
+                                onPress={toCustomerList} 
+                            />
                         </View>)}
                 </View>
             </View>
