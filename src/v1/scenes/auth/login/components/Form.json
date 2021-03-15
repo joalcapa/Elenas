@@ -1,0 +1,84 @@
+{
+  "description": "Este componente renderiza el formulario para iniciar session.",
+  "displayName": "Form",
+  "methods": [],
+  "props": {
+    "cellphone": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor del telefono.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "password": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Valor de la contraseña.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "isValidForm": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Identifica si el formulario es valido para enviar.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    },
+    "isError": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Identifica si ocurrio un error al enviar el formulario.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    },
+    "changeCellphone": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que modifica el valor del telefono.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changePassword": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que modifica la contraseña.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "login": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que envia el formulario.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    }
+  }
+}

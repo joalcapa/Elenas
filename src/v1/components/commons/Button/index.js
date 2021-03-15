@@ -5,7 +5,7 @@ import {TouchableOpacity, Text} from 'react-native';
 import styles from './styles';
 
 /**
- * Este componente renderiza un boton basico que ejecuta una funcion y se puede deshabilitar
+ * Este componente renderiza un boton basico que ejecuta una funcion y se puede deshabilitar.
  */
 const Button = (props) => (
     <TouchableOpacity 
