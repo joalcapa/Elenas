@@ -1,15 +1,16 @@
 import {useState, useCallback, useEffect} from 'react';
-import {useMutation} from '@apollo/client';
+import {useMutation, useQuery} from '@apollo/client';
 
 import useStates from './useStates';
-import {CLIENTS_SEARCH, CREATE_CLIENT} from '../gql/mutations';
+import {CREATE_CLIENT} from '../gql/mutations';
+import {CLIENTS_SEARCH} from '../gql/queries';
 
-const useCustomers = (isEdit = false) => {
+const useCustomers = (isEdit = false, onSuccessful = () => {}) => {
     const {states} = useStates();
-    //const [ClientsSearch, resultClientSearch] = useMutation(CLIENTS_SEARCH);
+    const clientsSearch = useQuery(CLIENTS_SEARCH);
     const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
 
-    const [isAddressSelect, setAddressSelect] = useState(true);
+    const [isAddressSelect, setAddressSelect] = useState(false);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [cedula, setCedula] = useState('');
@@ -20,16 +21,65 @@ const useCustomers = (isEdit = false) => {
     const [city, setCity] = useState('');
     const [cityId, setCityId] = useState(0);
     const [stateShortCode, setStateShortCode] = useState('');
+    const [stateName, setStateName] = useState('');
     const [country, setCountry] = useState('');
     const [stateId, setStateId] = useState(0);
     const [isError, setError] = useState(false);
+    const [statesForm, setStatesForm] = useState([]);
+    const [citiesForm, setCitiesForm] = useState([]);
 
     useEffect(() => {
-        console.log('Data: ', resultCreateClient);
+        if (statesForm.length === 0) {
+            setStatesForm(
+                states.map((stateForm) => {
+                    return {
+                        ...stateForm,
+                        label: stateForm.name,
+                        value: stateForm.id,
+                    };
+                })
+            );
+        }
+    }, [states, statesForm]);
+
+    useEffect(() => {
+        if (
+            resultCreateClient &&
+            resultCreateClient.data &&
+            resultCreateClient.data.createClient
+        ) {
+            onSuccessful();
+        }
     }, [resultCreateClient]);
+
+    const onSelectStateForm = (selectState) => {
+        setCitiesForm(
+            selectState.cities.map((data) => {
+                return {
+                    ...data,
+                    label: data.name,
+                    value: data.id,
+                };
+            })
+        );
+        setStateShortCode(selectState.shortCode);
+        setStateId(selectState.id);
+        changeStateName(selectState.name);
+        setCityId(0);
+        setCity('');
+    };
+
+    const onSelectCityForm = (citySelect) => {
+        setCity(citySelect.name);
+        setCityId(citySelect.id);
+    };
 
     const changeCountry = (value) => {
         setCountry(value);
+    };
+
+    const changeStateName = (value) => {
+        setStateName(value);
     };
 
     const changeStateId = (value) => {
@@ -100,16 +150,44 @@ const useCustomers = (isEdit = false) => {
                             email,
                             cellphone,
                             cedula,
+                            address: {
+                                streetAddress,
+                                city,
+                                cityId,
+                                stateShortCode,
+                                stateId,
+                                country,
+                            },
                         },
                     },
                 });
             } catch (error) {
                 setError(true);
             }
-    }, [firstName, lastName, cedula, email, cellphone]);
+    }, [
+        firstName,
+        lastName,
+        cedula,
+        email,
+        cellphone,
+        city,
+        cityId,
+        stateShortCode,
+        stateId,
+        country,
+        streetAddress,
+        CreateClient,
+    ]);
 
     return {
-        states,
+        customers:
+            clientsSearch &&
+            clientsSearch.data &&
+            clientsSearch.data.clientsSearch &&
+            clientsSearch.data.clientsSearch.results ?
+                clientsSearch.data.clientsSearch.results : [],
+        statesForm,
+        citiesForm,
         firstName,
         lastName,
         cedula,
@@ -123,12 +201,20 @@ const useCustomers = (isEdit = false) => {
         stateId,
         country,
         isError,
+        stateName,
         isValidForm: (
             firstName &&
             lastName &&
             cedula &&
             email &&
             cellphone &&
+            !isError
+        ),
+        isValidAddressForm: (
+            streetAddress &&
+            country &&
+            stateName &&
+            city &&
             !isError
         ),
         isAddressSelect,
@@ -146,6 +232,8 @@ const useCustomers = (isEdit = false) => {
         changeEmail,
         changeCellphone,
         changeAddress,
+        onSelectStateForm,
+        onSelectCityForm,
         createCustomer,
     };
 };

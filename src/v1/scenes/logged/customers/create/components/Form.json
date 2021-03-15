@@ -129,7 +129,7 @@
         "name": "func"
       },
       "required": false,
-      "description": "Funcion que envia el formulario.",
+      "description": "Funcion que muestra el formulario de direccion.",
       "defaultValue": {
         "value": "() => {}",
         "computed": false

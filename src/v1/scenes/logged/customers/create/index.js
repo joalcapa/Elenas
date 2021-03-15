@@ -1,17 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import BaseCustomer from '../BaseCustomers';
-import {Form, AddressForm} from './components';
+import TextField, {BIG_TYPE} from '../../../../components/commons/TextField';
 import {useCustomers} from '../../../../../kernel';
+import {Form, AddressForm} from './components';
 
 /**
  * Este componente permite crear o editar un cliente.
  */
 export const Create = (props) => {
     const {isEdit} = props;
-    const hook = useCustomers(isEdit);
+    const [isNewCustomer, setNewCustomer] = useState(false);
+    const hook = useCustomers(isEdit, () => setNewCustomer(true));
     const {isAddressSelect} = hook;
+
+    if (isNewCustomer) {
+        return (
+            <TextField
+                text={
+                    isEdit ?
+                        'Se ha actualizado satisfactoriamente' :
+                        'Se ha creado satisfactoriamente'
+                }
+                type={BIG_TYPE}
+            />
+        );
+    }
 
     if (isAddressSelect) {
         return <AddressForm {...hook} />;

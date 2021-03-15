@@ -21,6 +21,10 @@ export const CLIENTS_SEARCH_FIELDS = gql`
         id
         firstName
         lastName
+        cedula
+        address
+        cellphone
+        email
     }
   }
 `;

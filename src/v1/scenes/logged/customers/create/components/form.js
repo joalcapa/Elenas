@@ -50,8 +50,8 @@ const Form = (props) => (
                 <View style={styles.button_content}>
                     <Button
                         isDisabled={!props.isValidForm}
-                        text="CREAR"
-                        onPress={props.createCustomer}
+                        text="CONTINUAR"
+                        onPress={props.nextAddressSelect}
                     />
                 </View>
             </View>
@@ -104,9 +104,9 @@ Form.propTypes = {
      */
     changeCellphone: PropTypes.func,
     /**
-     * Funcion que envia el formulario.
+     * Funcion que muestra el formulario de direccion.
      */
-    createCustomer: PropTypes.func,
+    nextAddressSelect: PropTypes.func,
 };
 
 Form.defaultProps = {
@@ -124,7 +124,7 @@ Form.defaultProps = {
     changeEmail: () => {},
     changeCellphone: () => {},
     changeAddress: () => {},
-    createCustomer: () => {},
+    nextAddressSelect: () => {},
 };
 
 export default Form;

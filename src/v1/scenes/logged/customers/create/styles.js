@@ -10,6 +10,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height,
     },
+    select_label: {
+      paddingTop: 15,
+      paddingBottom: 15,
+    },
     content: {
         width: '100%',
         maxWidth: 700,
