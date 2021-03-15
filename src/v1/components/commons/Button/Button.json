@@ -1,0 +1,62 @@
+{
+  "description": "Este componente renderiza un boton basico que ejecuta una funcion y se puede deshabilitar",
+  "displayName": "Button",
+  "methods": [],
+  "props": {
+    "onPress": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que ejecuta el boton cuando se hace click sobre el.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "text": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Nombre del boton.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "isDefaultButton": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Por defecto el boton es de color azul.",
+      "defaultValue": {
+        "value": "true",
+        "computed": false
+      }
+    },
+    "isGreenButton": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "El boton cambia a color verde.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    },
+    "isDisabled": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Se deshabilita el boton.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    }
+  }
+}

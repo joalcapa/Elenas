@@ -4,6 +4,9 @@ import {TouchableOpacity, Text} from 'react-native';
 
 import styles from './styles';
 
+/**
+ * Este componente renderiza un boton basico que ejecuta una funcion y se puede deshabilitar
+ */
 const Button = (props) => (
     <TouchableOpacity 
         onPress={props.isDisabled ? null : props.onPress} 
@@ -19,10 +22,25 @@ const Button = (props) => (
 );
 
 Button.propTypes = {
+    /**
+     * Funcion que ejecuta el boton cuando se hace click sobre el.
+     */
     onPress: PropTypes.func,
+    /**
+     * Nombre del boton.
+     */
     text: PropTypes.string,
+    /**
+     * Por defecto el boton es de color azul.
+     */
     isDefaultButton: PropTypes.bool,
+    /**
+     * El boton cambia a color verde.
+     */
     isGreenButton: PropTypes.bool,
+    /**
+     * Se deshabilita el boton.
+     */
     isDisabled: PropTypes.bool,
 };
 
