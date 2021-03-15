@@ -6,7 +6,7 @@ import {Form, AddressForm} from './components';
 import {useCustomers} from '../../../../../kernel';
 
 /**
- * Este componente permite crear un cliente.
+ * Este componente permite crear o editar un cliente.
  */
 export const Create = (props) => {
     const {isEdit} = props;
