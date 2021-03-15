@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {View} from 'react-native';
 
 import {useCustomers} from '../../../../../kernel';
-import BaseCustomer from '../baseCustomers';
+import BaseCustomer from '../BaseCustomers';
 import InputField from '../../../../components/commons/InputField';
 import Button from '../../../../components/commons/Button';
 

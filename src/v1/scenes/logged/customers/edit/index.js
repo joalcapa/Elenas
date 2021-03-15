@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BaseCustomer from '../baseCustomers';
+import BaseCustomer from '../BaseCustomers';
 import {Create} from '../create';
 
 /**

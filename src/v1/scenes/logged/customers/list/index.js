@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import Button from '../../../../components/commons/Button';
 import TextField, { EXTRA_TYPE } from '../../../../components/commons/TextField';
 
-import BaseCustomer from '../baseCustomers';
+import BaseCustomer from '../BaseCustomers';
 
 import styles from './styles';
 

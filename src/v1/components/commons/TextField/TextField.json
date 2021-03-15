@@ -1,0 +1,40 @@
+{
+  "description": "Este componente renderiza un texto basico",
+  "displayName": "TextField",
+  "methods": [],
+  "props": {
+    "text": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Texto del TextField",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    },
+    "type": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Define el tamaño del texto",
+      "defaultValue": {
+        "value": "'normal'",
+        "computed": false
+      }
+    },
+    "isTitle": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Define el grosor del texto",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    }
+  }
+}
