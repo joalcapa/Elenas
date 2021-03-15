@@ -9,63 +9,73 @@ import styles from '../styles';
 /**
  * Este componente permite enviar el formulario para crear o editar un cliente.
  */
-const Form = (props) => (
-    <View style={styles.container}>
-        <View style={styles.content}>
-            <View style={styles.input_content}>
-                <InputField
-                    placeholder="Nombres"
-                    value={props.firstName}
-                    onChangeText={props.changeFirstName}
-                />
-            </View>
-            <View style={styles.input_content}>
-                <InputField
-                    placeholder="Apellidos"
-                    value={props.lastName}
-                    onChangeText={props.changeLastName}
-                />
-            </View>
-            <View style={styles.input_content}>
-                <InputField
-                    placeholder="Cedula"
-                    value={props.cedula}
-                    onChangeText={props.changeCedula}
-                />
-            </View>
-            <View style={styles.input_content}>
-                <InputField
-                    placeholder="Email"
-                    value={props.email}
-                    onChangeText={props.changeEmail}
-                />
-            </View>
-            <View style={styles.input_content}>
-                <InputField
-                    placeholder="Telefono"
-                    value={props.cellphone}
-                    onChangeText={props.changeCellphone}
-                />
-            </View>
-            <View style={styles.input_content}>
-                <InputField
-                    placeholder="Direccion"
-                    value={props.address}
-                    onChangeText={props.changeAddress}
-                />
-            </View>
-            <View style={styles.button_content}>
-                <Button
-                    isDisabled={!props.isValidForm}
-                    text="CREAR"
-                    onPress={props.createCustomer}
-                />
+const Form = (props) => {
+    const {states} = props;
+
+    console.log('States: ', states);
+
+    return (
+        <View style={styles.container}>
+            <View style={styles.content}>
+                <View style={styles.input_content}>
+                    <InputField
+                        placeholder="Nombres"
+                        value={props.firstName}
+                        onChangeText={props.changeFirstName}
+                    />
+                </View>
+                <View style={styles.input_content}>
+                    <InputField
+                        placeholder="Apellidos"
+                        value={props.lastName}
+                        onChangeText={props.changeLastName}
+                    />
+                </View>
+                <View style={styles.input_content}>
+                    <InputField
+                        placeholder="Cedula"
+                        value={props.cedula}
+                        onChangeText={props.changeCedula}
+                    />
+                </View>
+                <View style={styles.input_content}>
+                    <InputField
+                        placeholder="Email"
+                        value={props.email}
+                        onChangeText={props.changeEmail}
+                    />
+                </View>
+                <View style={styles.input_content}>
+                    <InputField
+                        placeholder="Telefono"
+                        value={props.cellphone}
+                        onChangeText={props.changeCellphone}
+                    />
+                </View>
+                <View style={styles.input_content}>
+                    <InputField
+                        placeholder="Direccion"
+                        value={props.address}
+                        onChangeText={props.changeAddress}
+                    />
+                </View>
+                <View style={styles.button_content}>
+                    <Button
+                        isDisabled={!props.isValidForm}
+                        text="CREAR"
+                        onPress={props.createCustomer}
+                    />
+                </View>
             </View>
         </View>
-    </View>
-);
+    );
+};
 
 Form.propTypes = {
+    /**
+     * Array de los estados y sus ciudades.
+     */
+    states: PropTypes.array,
     /**
      * Valor del nombre.
      */
@@ -125,6 +135,7 @@ Form.propTypes = {
 };
 
 Form.defaultProps = {
+    states: [],
     firstName: '',
     lastName: '',
     cedula: '',

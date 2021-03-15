@@ -1,9 +1,11 @@
 import {useState, useCallback, useEffect} from 'react';
 import {useMutation} from '@apollo/client';
 
+import useStates from './useStates';
 import {CLIENTS_SEARCH, CREATE_CLIENT} from '../gql/mutations';
 
-const useCustomers = () => {
+const useCustomers = (isEdit = false) => {
+    const {states} = useStates();
     //const [ClientsSearch, resultClientSearch] = useMutation(CLIENTS_SEARCH);
     const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
 
@@ -13,11 +15,41 @@ const useCustomers = () => {
     const [email, setEmail] = useState('');
     const [cellphone, setCellphone] = useState('');
     const [address, setAddress] = useState('');
+    const [streetAddress, setStreetAddress] = useState('');
+    const [city, setCity] = useState('');
+    const [cityId, setCityId] = useState(0);
+    const [stateShortCode, setStateShortCode] = useState('');
+    const [country, setCountry] = useState('');
+    const [stateId, setStateId] = useState(0);
     const [isError, setError] = useState(false);
 
     useEffect(() => {
         console.log('Data: ', resultCreateClient);
     }, [resultCreateClient]);
+
+    const changeCountry = (value) => {
+        setCountry(value);
+    };
+
+    const changeStateId = (value) => {
+        setStateId(value);
+    };
+
+    const changeStateShortCode = (value) => {
+        setStateShortCode(value);
+    };
+
+    const changeCityId = (value) => {
+        setCityId(value);
+    };
+
+    const changeCity = (value) => {
+        setCity(value);
+    };
+
+    const changeStreetAddress = (value) => {
+        setStreetAddress(value);
+    };
 
     const changeFirstName = (value) => {
         setFirstName(value);
@@ -69,12 +101,19 @@ const useCustomers = () => {
     }, [firstName, lastName, cedula, email, cellphone, address]);
 
     return {
+        states,
         firstName,
         lastName,
         cedula,
         email,
         cellphone,
         address,
+        streetAddress,
+        city,
+        cityId,
+        stateShortCode,
+        stateId,
+        country,
         isError,
         isValidForm: (
             firstName &&
@@ -85,6 +124,12 @@ const useCustomers = () => {
             address &&
             !isError
         ),
+        changeCountry,
+        changeStateId,
+        changeStateShortCode,
+        changeCity,
+        changeCityId,
+        changeStreetAddress,
         changeFirstName,
         changeLastName,
         changeCedula,
