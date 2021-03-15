@@ -75,7 +75,7 @@ export const Create = (props) => {
                 </View>
                 <View style={styles.button_content}>
                     <Button
-                        isDisabled={isValidForm}
+                        isDisabled={!isValidForm}
                         text="CREAR"
                         onPress={createCustomer}
                     />
