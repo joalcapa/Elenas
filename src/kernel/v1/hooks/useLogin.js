@@ -42,9 +42,7 @@ const useLogin = () => {
 
     const login = useCallback(async () => {
         try {
-            if (cellphone && password) {
-                Login({variables: {cellphone, password}});
-            }
+            Login({variables: {cellphone, password}});
         } catch (error) {
             setError(true);
         }

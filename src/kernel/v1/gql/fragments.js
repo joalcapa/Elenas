@@ -12,3 +12,29 @@ export const AUTH_FIELDS = gql`
     }
   }
 `;
+
+export const CLIENTS_SEARCH_FIELDS = gql`
+  fragment clientsSearchFields on ClientPagination {
+    currentPage
+    totalPages
+    results {
+        id
+        firstName
+        lastName
+    }
+  }
+`;
+
+export const CLIENT_FIELDS = gql`
+  fragment clientFields on ClientResult {
+    Client {
+        id
+        firstName
+        lastName
+        cedula
+        address
+        cellphone
+        email
+    }
+  }
+`;
