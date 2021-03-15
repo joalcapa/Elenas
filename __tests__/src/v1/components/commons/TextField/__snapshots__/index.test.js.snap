@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField component render empty text component 1`] = `
+<div
+  className="css-text-901oao"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "14px",
+    }
+  }
+>
+  
+</div>
+`;
+
+exports[`TextField component render text component with text 1`] = `
+<div
+  className="css-text-901oao"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "14px",
+    }
+  }
+>
+  Test text
+</div>
+`;
+
+exports[`TextField component render text component with text and title 1`] = `
+<div
+  className="css-text-901oao r-fontWeight-vw2c0b"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "14px",
+    }
+  }
+>
+  Test text
+</div>
+`;
+
+exports[`TextField component render text component with text and title and fontSize of 12px 1`] = `
+<div
+  className="css-text-901oao r-fontWeight-vw2c0b"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "12px",
+    }
+  }
+>
+  Test text
+</div>
+`;
+
+exports[`TextField component render text component with text and title and fontSize of 14px 1`] = `
+<div
+  className="css-text-901oao r-fontWeight-vw2c0b"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "14px",
+    }
+  }
+>
+  Test text
+</div>
+`;
+
+exports[`TextField component render text component with text and title and fontSize of 16px 1`] = `
+<div
+  className="css-text-901oao r-fontWeight-vw2c0b"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "16px",
+    }
+  }
+>
+  Test text
+</div>
+`;
+
+exports[`TextField component render text component with text and title and fontSize of 20px 1`] = `
+<div
+  className="css-text-901oao r-fontWeight-vw2c0b"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "20px",
+    }
+  }
+>
+  Test text
+</div>
+`;
+
+exports[`TextField component render text component with text and title and fontSize of 32px 1`] = `
+<div
+  className="css-text-901oao r-fontWeight-vw2c0b"
+  dir="auto"
+  onClick={[Function]}
+  style={
+    Object {
+      "fontSize": "32px",
+    }
+  }
+>
+  Test text
+</div>
+`;

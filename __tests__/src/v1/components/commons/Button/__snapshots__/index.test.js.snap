@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component render blue button component 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-l7f4p8 r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onKeyDown={[Function]}
+  style={
+    Object {
+      "WebkitTransitionDuration": "0s",
+      "transitionDuration": "0s",
+    }
+  }
+  tabIndex="0"
+>
+  <div
+    className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+    dir="auto"
+    onClick={[Function]}
+  >
+    
+  </div>
+</div>
+`;
+
+exports[`Button component render disabled button component 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-oyv1ms r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onKeyDown={[Function]}
+  style={
+    Object {
+      "WebkitTransitionDuration": "0s",
+      "transitionDuration": "0s",
+    }
+  }
+  tabIndex="0"
+>
+  <div
+    className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+    dir="auto"
+    onClick={[Function]}
+  >
+    button title
+  </div>
+</div>
+`;
+
+exports[`Button component render green button component 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15okr6x r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onKeyDown={[Function]}
+  style={
+    Object {
+      "WebkitTransitionDuration": "0s",
+      "transitionDuration": "0s",
+    }
+  }
+  tabIndex="0"
+>
+  <div
+    className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+    dir="auto"
+    onClick={[Function]}
+  >
+    button title
+  </div>
+</div>
+`;
