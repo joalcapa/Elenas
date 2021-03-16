@@ -99,6 +99,10 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
         }
     }, [resultUpdateClient]);
 
+    const onBack = () => {
+        setAddressSelect(false);
+    };
+
     const onSelectStateForm = (selectState) => {
         setCitiesForm(
             selectState.cities.map((data) => {
@@ -306,6 +310,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
         onSelectStateForm,
         onSelectCityForm,
         createCustomer,
+        onBack,
     };
 };
 

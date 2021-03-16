@@ -26,6 +26,9 @@ const styles = StyleSheet.create({
     disabled_button: {
         backgroundColor: Colors.C_dbdbdb,
     },
+    white_button: {
+        backgroundColor: Colors.C_FFFFFF,
+    },
 });
 
 export default styles;

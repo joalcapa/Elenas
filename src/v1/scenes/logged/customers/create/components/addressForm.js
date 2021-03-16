@@ -49,11 +49,19 @@ const AddressForm = (props) => (
                 value={props.streetAddress}
             />
         </View>
-        <Button
-            text={props.isEdit ? 'EDITAR' : 'CREAR'}
-            onPress={props.createCustomer}
-            isDisabled={!props.isValidAddressForm}
-        />
+        <View style={styles.box_button}>
+            <Button 
+                isWhiteButton
+                text={'VOLVER'}
+                onPress={props.onBack}
+            />
+            <View style={{width:20}}/>
+            <Button
+                text={props.isEdit ? 'EDITAR' : 'CREAR'}
+                onPress={props.createCustomer}
+                isDisabled={!props.isValidAddressForm}
+            />
+        </View>
     </View>
 );
 
@@ -110,6 +118,10 @@ AddressForm.propTypes = {
      * Identifica si se edita al cliente.
      */
     isEdit: PropTypes.bool,
+    /**
+     * Funcion que permite volver al formulario del cliente.
+     */
+    onBack: PropTypes.func,
 };
 
 AddressForm.defaultProps = {
@@ -126,6 +138,7 @@ AddressForm.defaultProps = {
     createCustomer: () => {},
     isValidAddressForm: false,
     isEdit: false,
+    onBack: () => {},
 };
 
 export default AddressForm;

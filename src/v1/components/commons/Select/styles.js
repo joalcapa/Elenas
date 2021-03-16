@@ -6,13 +6,16 @@ const {width, height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
     button_content: {
-        width: 200,
-        height: 40,
+        width: '100%',
+        maxWidth: 150,
         borderWidth: 1,
         borderColor: Colors.C_7e807f,
         display: 'flex',
         justifyContent: 'center',
-        paddingLeft: 20,
+        paddingTop: 5,
+        paddingBottom: 5,
+        paddingLeft: 15,
+        paddingRight: 15,
         borderRadius: 5,
     },
     content: {

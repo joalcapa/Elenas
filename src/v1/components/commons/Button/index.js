@@ -14,6 +14,7 @@ const Button = (props) => (
             styles.button_container,
             props.isDefaultButton ? styles.default_button : {},
             props.isGreenButton ? styles.green_button : {},
+            props.isWhiteButton ? styles.white_button : {},
             props.isDisabled ? styles.disabled_button : {},
         ]}
     >
@@ -42,6 +43,10 @@ Button.propTypes = {
      * Se deshabilita el boton.
      */
     isDisabled: PropTypes.bool,
+    /**
+     * El boton cambia a color blanco.
+     */
+    isWhiteButton: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -50,6 +55,7 @@ Button.defaultProps = {
     isDefaultButton: true,
     isGreenButton: false,
     isDisabled: false,
+    isWhiteButton: false,
 };
 
 export default Button;
