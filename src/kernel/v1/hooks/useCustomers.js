@@ -4,11 +4,33 @@ import {useMutation, useQuery} from '@apollo/client';
 import useStates from './useStates';
 import {CREATE_CLIENT, UPDATE_CLIENT} from '../gql/mutations';
 import {CLIENTS_SEARCH} from '../gql/queries';
+import {CLIENT_FIELDS} from '../gql/fragments';
 
 const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') => {
     const {states} = useStates();
-    const clientsSearch = useQuery(CLIENTS_SEARCH, customerId !== '' ? {variables: {ids: [parseInt(customerId)]}} : null);
-    const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
+    const clientsSearch = useQuery(CLIENTS_SEARCH, customerId !== '' ? {variables: {ids: [parseInt(customerId)]}} : {variables: {page: 0}});
+    const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT, {
+        update(cache, {data: {createClient}}) {
+            cache.modify({
+                fields: {
+                    clientsSearch(existingClients = []) {
+                        const newClientRef = cache.writeFragment({
+                            data: createClient,
+                            fragment: CLIENT_FIELDS,
+                        });
+
+                        return {
+                            ...existingClients,
+                            results: [
+                                newClientRef,
+                                ...existingClients.results
+                            ],
+                        };
+                    }
+                }
+            });
+        }
+    });
     const [UpdateClient, resultUpdateClient] = useMutation(UPDATE_CLIENT);
 
     const [isCustomerCreate, setCustomerCreate] = useState(false);

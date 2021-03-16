@@ -16,7 +16,7 @@ const BaseCustomer = (props) => {
     let history = useHistory();
 
     const toCustomerList = () => {
-        history.push("/");
+        history.replace("/");
     };
 
     const toCustomerCreate = () => {
