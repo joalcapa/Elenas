@@ -125,11 +125,14 @@ describe('Create and Edit', () => {
 
         act(() => {
             result.current.changeCellphone('+3500000');
+            result.current.changeCountry('Test country');
         });
 
         act(() => {
             result.current.createCustomer();
         });
+
+        await waitForNextUpdate();
 
         expect(result.current.isCustomerEdit).toBe(true);
         expect(onSuccessfulEvent.mock.results[0].value).toBe('onSuccessful invoked');

@@ -1,4 +1,4 @@
-import {LOGIN, CREATE_CLIENT} from '../src/kernel/v1/gql/mutations';
+import {LOGIN, CREATE_CLIENT, UPDATE_CLIENT} from '../src/kernel/v1/gql/mutations';
 import {STATES, CLIENTS_SEARCH} from '../src/kernel/v1/gql/queries';
 
 import {customers} from './customers';
@@ -56,40 +56,43 @@ export const responseGpql = [
         },
         result: {
             data: {
-                currentPage: 1,
-                totalPages: 1,
-                clientsSearch: [
-                    {
-                        ...customers[0],
-                        city: 'Test city',
-                        state: {
-                            id: 1,
-                            name: 'Test state',
-                            shortCode: 'Test ShortCode',
-                            cities: [
-                                {
-                                    id: 3,
-                                    name: 'Test city',
-                                },
-                            ],
+                clientsSearch: {
+                    __typename: 'ClientPagination',
+                    currentPage: 0,
+                    totalPages: 1,
+                    results: [
+                        {
+                            ...customers[0],
+                            city: 'Test city',
+                            state: {
+                                id: 1,
+                                name: 'Test state',
+                                shortCode: 'Test ShortCode',
+                                cities: [
+                                    {
+                                        id: 3,
+                                        name: 'Test city',
+                                    },
+                                ],
+                            },
                         },
-                    },
-                    {
-                        ...customers[1],
-                        city: 'Test city',
-                        state: {
-                            id: 1,
-                            name: 'Test state',
-                            shortCode: 'Test ShortCode',
-                            cities: [
-                                {
-                                    id: 3,
-                                    name: 'Test city',
-                                },
-                            ],
+                        {
+                            ...customers[1],
+                            city: 'Test city',
+                            state: {
+                                id: 1,
+                                name: 'Test state',
+                                shortCode: 'Test ShortCode',
+                                cities: [
+                                    {
+                                        id: 3,
+                                        name: 'Test city',
+                                    },
+                                ],
+                            },
                         },
-                    },
-                ],
+                    ],
+                },
             },
         },
     },
@@ -102,25 +105,28 @@ export const responseGpql = [
         },
         result: {
             data: {
-                currentPage: 1,
-                totalPages: 1,
-                clientsSearch: [
-                    {
-                        ...customer,
-                        city: 'Test city',
-                        state: {
-                            id: 1,
-                            name: 'Test state',
-                            shortCode: 'Test ShortCode',
-                            cities: [
-                                {
-                                    id: 3,
-                                    name: 'Test city',
-                                },
-                            ],
-                        },
-                    },
-                ],
+                clientsSearch: {
+                    __typename: 'ClientPagination',
+                    currentPage: 0,
+                    totalPages: 1,
+                    results: [
+                        {
+                            ...customer,
+                            city: 'Test city',
+                            state: {
+                                id: 1,
+                                name: 'Test state',
+                                shortCode: 'Test ShortCode',
+                                cities: [
+                                    {
+                                        id: 3,
+                                        name: 'Test city',
+                                    },
+                                ],
+                            },
+                        }
+                    ],
+                },
             },
         },
     },
@@ -148,6 +154,38 @@ export const responseGpql = [
         result: {
             data: {
                 createClient: {
+                    __typename: 'Client',
+                    ...customer,
+                },
+            },
+        },
+    },
+    {
+        request: {
+            query: UPDATE_CLIENT,
+            variables: {
+                id: 1,
+                input: {
+                    firstName: 'Test first name',
+                    lastName: 'Test last name',
+                    email: 'client.email',
+                    cedula: '1000000',
+                    cellphone: '+3500000',
+                    address: {
+                        streetAddress: 'Test address',
+                        city: 'Test city',
+                        cityId: 3,
+                        stateShortCode: 'Test ShortCode',
+                        stateId: 1,
+                        country: 'Test country',
+                    },
+                },
+            },
+        },
+        result: {
+            data: {
+                updateClient: {
+                    __typename: 'Client',
                     ...customer,
                 },
             },
