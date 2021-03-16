@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {useHistory} from 'react-router-dom';
 import {View, StyleSheet} from 'react-native';
 
-
+import {useUser} from '../../../../kernel';
 import Button from '../../../components/commons/Button';
 import TextField, {BIG_TYPE} from '../../../components/commons/TextField';
 
@@ -12,6 +12,7 @@ import TextField, {BIG_TYPE} from '../../../components/commons/TextField';
  */
 const BaseCustomer = (props) => {
     const {title, Child, stackProps, options} = props;
+    const {logOut} = useUser();
     let history = useHistory();
 
     const toCustomerList = () => {
@@ -46,6 +47,12 @@ const BaseCustomer = (props) => {
                                 onPress={toCustomerList} 
                             />
                         </View>)}
+                        <View style={styles.button_content}>
+                            <Button 
+                                text='CERRAR SESION' 
+                                onPress={logOut}
+                            />
+                        </View>
                 </View>
             </View>
             <View style={styles.container}>
@@ -93,9 +100,14 @@ const styles = StyleSheet.create({
         paddingTop: '10px',
     },
     buttons_container: {
-        width: 400,
+        width: 800,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        paddingRight: 150,
     },
     button_content: {
+        width: 200,
         display: 'flex',
         alignItems: 'flex-end',
         paddingRight: '10px',
