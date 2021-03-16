@@ -1,14 +1,12 @@
-import './App.css';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import Kernel from './kernel';
 import Navigation from './v1/navigation';
 
-function App() {
-  return (
+const App = () => (
     <Kernel storage={AsyncStorage}>
-      <Navigation />
+        <Navigation />
     </Kernel>
-  );
-}
+);
 
 export default App;
