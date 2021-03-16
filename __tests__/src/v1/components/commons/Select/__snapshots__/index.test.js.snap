@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component render Select component 1`] = `
+<div
+  className="css-view-1dbjc4n r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-cursor-1loqt21 r-display-6koalj r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onKeyDown={[Function]}
+  style={
+    Object {
+      "WebkitTransitionDuration": "0s",
+      "transitionDuration": "0s",
+    }
+  }
+  tabIndex="0"
+>
+  <div
+    className="css-text-901oao"
+    dir="auto"
+    onClick={[Function]}
+    style={
+      Object {
+        "fontSize": "14px",
+      }
+    }
+  >
+    Seleccionar
+  </div>
+</div>
+`;
+
+exports[`Select component render Select component with options 1`] = `
+<div
+  className="css-view-1dbjc4n r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-cursor-1loqt21 r-display-6koalj r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onKeyDown={[Function]}
+  style={
+    Object {
+      "WebkitTransitionDuration": "0s",
+      "transitionDuration": "0s",
+    }
+  }
+  tabIndex="0"
+>
+  <div
+    className="css-text-901oao"
+    dir="auto"
+    onClick={[Function]}
+    style={
+      Object {
+        "fontSize": "14px",
+      }
+    }
+  >
+    Seleccionar
+  </div>
+</div>
+`;
+
+exports[`Select component render Select component with value 1`] = `
+<div
+  className="css-view-1dbjc4n r-borderColor-4yh6xw r-borderRadius-1f0042m r-borderWidth-rs99b7 r-cursor-1loqt21 r-display-6koalj r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-1inuy60 r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-glunga r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onKeyDown={[Function]}
+  style={
+    Object {
+      "WebkitTransitionDuration": "0s",
+      "transitionDuration": "0s",
+    }
+  }
+  tabIndex="0"
+>
+  <div
+    className="css-text-901oao"
+    dir="auto"
+    onClick={[Function]}
+    style={
+      Object {
+        "fontSize": "14px",
+      }
+    }
+  >
+    select
+  </div>
+</div>
+`;

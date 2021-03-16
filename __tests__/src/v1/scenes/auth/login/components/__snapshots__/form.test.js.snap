@@ -61,7 +61,7 @@ exports[`Form component render empty form component 1`] = `
         placeholder="Contraseña"
         readOnly={false}
         spellCheck={true}
-        type="text"
+        type="password"
         value=""
       />
     </div>
@@ -155,7 +155,7 @@ exports[`Form component render form component with cellphone 1`] = `
         placeholder="Contraseña"
         readOnly={false}
         spellCheck={true}
-        type="text"
+        type="password"
         value=""
       />
     </div>
@@ -249,7 +249,7 @@ exports[`Form component render form component with error 1`] = `
         placeholder="Contraseña"
         readOnly={false}
         spellCheck={true}
-        type="text"
+        type="password"
         value=""
       />
     </div>
@@ -354,7 +354,7 @@ exports[`Form component render form component with password 1`] = `
         placeholder="Contraseña"
         readOnly={false}
         spellCheck={true}
-        type="text"
+        type="password"
         value="123456789"
       />
     </div>

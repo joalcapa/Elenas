@@ -69,7 +69,7 @@ describe('Form component', () => {
             <Form changeEmail={onPressEvent} />,
         );
 
-        wrapper.find(InputField).at(3).props().onChangeText('value');
+        wrapper.find(InputField).at(2).props().onChangeText('value');
         expect(onPressEvent.mock.results[0].value).toBe('Link on press invoked');
     });
 
@@ -80,7 +80,7 @@ describe('Form component', () => {
             <Form changeCedula={onPressEvent} />,
         );
 
-        wrapper.find(InputField).at(2).props().onChangeText('value');
+        wrapper.find(InputField).at(3).props().onChangeText('value');
         expect(onPressEvent.mock.results[0].value).toBe('Link on press invoked');
     });
 

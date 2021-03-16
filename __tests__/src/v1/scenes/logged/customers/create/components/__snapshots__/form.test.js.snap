@@ -63,7 +63,7 @@ exports[`Form component render empty form component 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Cedula"
+        placeholder="Email"
         readOnly={false}
         spellCheck={true}
         type="text"
@@ -84,7 +84,7 @@ exports[`Form component render empty form component 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Email"
+        placeholder="Cedula"
         readOnly={false}
         spellCheck={true}
         type="text"
@@ -204,11 +204,11 @@ exports[`Form component render form component with cedula 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Cedula"
+        placeholder="Email"
         readOnly={false}
         spellCheck={true}
         type="text"
-        value="15151212151"
+        value=""
       />
     </div>
     <div
@@ -225,11 +225,11 @@ exports[`Form component render form component with cedula 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Email"
+        placeholder="Cedula"
         readOnly={false}
         spellCheck={true}
         type="text"
-        value=""
+        value="15151212151"
       />
     </div>
     <div
@@ -345,7 +345,7 @@ exports[`Form component render form component with cellphone 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Cedula"
+        placeholder="Email"
         readOnly={false}
         spellCheck={true}
         type="text"
@@ -366,7 +366,7 @@ exports[`Form component render form component with cellphone 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Email"
+        placeholder="Cedula"
         readOnly={false}
         spellCheck={true}
         type="text"
@@ -486,11 +486,11 @@ exports[`Form component render form component with email 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Cedula"
+        placeholder="Email"
         readOnly={false}
         spellCheck={true}
         type="text"
-        value=""
+        value="email@email.com"
       />
     </div>
     <div
@@ -507,11 +507,11 @@ exports[`Form component render form component with email 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Email"
+        placeholder="Cedula"
         readOnly={false}
         spellCheck={true}
         type="text"
-        value="email@email.com"
+        value=""
       />
     </div>
     <div
@@ -627,7 +627,7 @@ exports[`Form component render form component with firstName 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Cedula"
+        placeholder="Email"
         readOnly={false}
         spellCheck={true}
         type="text"
@@ -648,7 +648,7 @@ exports[`Form component render form component with firstName 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Email"
+        placeholder="Cedula"
         readOnly={false}
         spellCheck={true}
         type="text"
@@ -768,7 +768,7 @@ exports[`Form component render form component with lastName 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Cedula"
+        placeholder="Email"
         readOnly={false}
         spellCheck={true}
         type="text"
@@ -789,7 +789,7 @@ exports[`Form component render form component with lastName 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         onSelect={[Function]}
-        placeholder="Email"
+        placeholder="Cedula"
         readOnly={false}
         spellCheck={true}
         type="text"

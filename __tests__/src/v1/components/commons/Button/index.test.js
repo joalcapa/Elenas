@@ -24,6 +24,17 @@ describe('Button component', () => {
         expect(tree).toMatchSnapshot();
     });
 
+    test('render white button component', () => {
+        const tree = create(
+            <Button
+                isWhiteButton
+                onPress={() => {}}
+                text="button title"
+            />,
+        ).toJSON();
+        expect(tree).toMatchSnapshot();
+    });
+
     test('onPress functionality', () => {
         const onPressEvent = jest.fn();
         onPressEvent.mockReturnValue('Link on press invoked');
