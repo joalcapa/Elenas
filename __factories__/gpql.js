@@ -1,5 +1,5 @@
 import {LOGIN} from '../src/kernel/v1/gql/mutations';
-import {STATES} from '../src/kernel/v1/gql/queries';
+import {STATES, CLIENTS_SEARCH} from '../src/kernel/v1/gql/queries';
 
 import {customers} from './customers';
 import {states} from './states';
@@ -45,6 +45,29 @@ export const responseGpql = [
         result: {
             data: {
                 states: states,
+            },
+        },
+    },
+    {
+        request: {
+            query: CLIENTS_SEARCH,
+        },
+        result: {
+            data: {
+                clientsSearch: customers,
+            },
+        },
+    },
+    {
+        request: {
+            query: CLIENTS_SEARCH,
+            variables: {
+                ids: [customers[0].id]
+            }
+        },
+        result: {
+            data: {
+                clientsSearch: [customers[0]],
             },
         },
     },

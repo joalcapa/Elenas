@@ -15,6 +15,7 @@ const App = (props) => {
                 updateUser: (newUser) => {
                     localStorage.setItem('USER', JSON.stringify(newUser));
                 },
+                logOut: () => {},
             }
         },
         env: {},
