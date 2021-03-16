@@ -93,7 +93,6 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
     }, [resultCreateClient]);
 
     useEffect(() => {
-        console.log('Update: ', resultUpdateClient);
         if (
             resultUpdateClient &&
             resultUpdateClient.data &&
@@ -199,26 +198,6 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
     const createCustomer = useCallback(async () => {
             try {
                 if (isEdit) {
-                    console.log('---ª', {
-                        variables: {
-                            id: parseInt(customerId),
-                            input: {
-                                firstName,
-                                lastName,
-                                email,
-                                cellphone,
-                                cedula,
-                                address: {
-                                    streetAddress,
-                                    city,
-                                    cityId,
-                                    stateShortCode,
-                                    stateId,
-                                    country,
-                                },
-                            },
-                        },
-                    });
                     await UpdateClient({
                         variables: {
                             id: parseInt(customerId),
