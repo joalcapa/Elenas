@@ -1,16 +1,17 @@
 import {useState, useCallback, useEffect} from 'react';
 import {useMutation, useQuery} from '@apollo/client';
 
-import useStates from './useStates';
+//import useStates from './useStates';
 import {CREATE_CLIENT, UPDATE_CLIENT} from '../gql/mutations';
 import {CLIENTS_SEARCH} from '../gql/queries';
 
 const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') => {
-    const {states} = useStates();
+    //const {states} = useStates();
     const clientsSearch = useQuery(CLIENTS_SEARCH, customerId !== '' ? {variables: {ids: [parseInt(customerId)]}} : null);
     const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT);
     const [UpdateClient, resultUpdateClient] = useMutation(UPDATE_CLIENT);
 
+    const [isCustomerCreate, setCustomerCreate] = useState(false);
     const [isAddressSelect, setAddressSelect] = useState(false);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -65,7 +66,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
         }
     }, [clientsSearch]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         if (statesForm.length === 0) {
             setStatesForm(
                 states.map((stateForm) => {
@@ -77,7 +78,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
                 })
             );
         }
-    }, [states, statesForm]);
+    }, [states, statesForm]);*/
 
     useEffect(() => {
         if (
@@ -86,6 +87,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
             resultCreateClient.data.createClient
         ) {
             onSuccessful();
+            setCustomerCreate(true);
         }
     }, [resultCreateClient]);
 
@@ -292,6 +294,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
             city &&
             !isError
         ),
+        isCustomerCreate,
         isAddressSelect,
         nextForm,
         nextAddressSelect,

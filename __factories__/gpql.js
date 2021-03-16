@@ -1,15 +1,17 @@
-import {LOGIN} from '../src/kernel/v1/gql/mutations';
+import {LOGIN, CREATE_CLIENT} from '../src/kernel/v1/gql/mutations';
 import {STATES, CLIENTS_SEARCH} from '../src/kernel/v1/gql/queries';
 
 import {customers} from './customers';
 import {states} from './states';
+
+const customer = customers[0];
 
 export const responseGpql = [
     {
         request: {
             query: LOGIN,
             variables: {
-                cellphone: customers[0].cellphone,
+                cellphone: customer.cellphone,
                 password: 'password',
             },
         },
@@ -17,7 +19,7 @@ export const responseGpql = [
             data: {
                 login: {
                     token: 'auth token',
-                    user: customers[0],
+                    user: customer,
                 },
             },
         },
@@ -26,7 +28,7 @@ export const responseGpql = [
         request: {
             query: LOGIN,
             variables: {
-                cellphone: customers[0].cellphone,
+                cellphone: customer.cellphone,
                 password: 'other password',
             },
         },
@@ -62,12 +64,41 @@ export const responseGpql = [
         request: {
             query: CLIENTS_SEARCH,
             variables: {
-                ids: [customers[0].id]
+                ids: [customer.id]
             }
         },
         result: {
             data: {
-                clientsSearch: [customers[0]],
+                clientsSearch: [customer],
+            },
+        },
+    },
+    {
+        request: {
+            query: CREATE_CLIENT,
+            variables: {
+                input: {
+                    firstName: customer.firstName,
+                    lastName: customer.lastName,
+                    email: customer.email,
+                    cedula: customer.cedula,
+                    cellphone: customer.cellphone,
+                    address: {
+                        streetAddress: 'Test streetAddress',
+                        city: 'Test city',
+                        cityId: 1,
+                        stateShortCode: 'Test ShortCode',
+                        stateId: 2,
+                        country: 'Test Country',
+                    },
+                },
+            },
+        },
+        result: {
+            data: {
+                createClient: {
+                    ...customer,
+                },
             },
         },
     },
