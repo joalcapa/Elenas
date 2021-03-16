@@ -1,0 +1,561 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component List component render customers list component 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1uwte3a r-paddingTop-1knelpx r-width-16k0tzm"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-justifyContent-1wtj0ep r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        ID
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        NOMBRE
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        APELLIDO
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        CEDULA
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        EMAIL
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        DIRECCION
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        TELEFONO
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        ACCION
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-justifyContent-1wtj0ep r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        1
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Test first name
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Test last name
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        1000000
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        test@test.com
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Test address
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        +00587458
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-l7f4p8 r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          Editar
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-justifyContent-1wtj0ep r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        2
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Test first name 2
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Test last name 2
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        200000
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        test2@test.com
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Test address 2
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        +002556421
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-l7f4p8 r-borderRadius-1xfd6ze r-cursor-1loqt21 r-displayFlex-14n0d7j r-justifyContent-1777fci r-maxWidth-127gp16 r-paddingBottom-xd6kpl r-paddingTop-tskmnb r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr r-width-13qz1uu"
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "WebkitTransitionDuration": "0s",
+            "transitionDuration": "0s",
+          }
+        }
+        tabIndex="0"
+      >
+        <div
+          className="css-text-901oao r-color-cqee49 r-fontSize-1b43r93"
+          dir="auto"
+          onClick={[Function]}
+        >
+          Editar
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Component List component render empty list component 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-justifyContent-1777fci r-paddingBottom-1uwte3a r-paddingTop-1knelpx r-width-16k0tzm"
+>
+  <div
+    className="css-view-1dbjc4n r-alignContent-uia4a0 r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-justifyContent-1wtj0ep r-width-13qz1uu"
+  >
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        ID
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        NOMBRE
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        APELLIDO
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        CEDULA
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        EMAIL
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        DIRECCION
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        TELEFONO
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-width-8hv5mx"
+    >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        ACCION
+      </div>
+    </div>
+  </div>
+</div>
+`;
