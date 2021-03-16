@@ -43,6 +43,25 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
             changeCellphone(client.cellphone);
             changeEmail('client.email');
             changeCedula(client.cedula);
+            changeStateId(client.state.id);
+            changeStateName(client.state.name);
+            changeStreetAddress(client.address);
+            changeStateShortCode(client.state.shortCode);
+
+            setCitiesForm(
+                client.state.cities.map((data) => {
+                    if (data.name === client.city) {
+                        changeCityId(data.id);
+                        changeCity(data.name);
+                    }
+
+                    return {
+                        ...data,
+                        label: data.name,
+                        value: data.id,
+                    };
+                })
+            );
         }
     }, [clientsSearch]);
 

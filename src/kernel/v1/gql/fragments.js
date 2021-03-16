@@ -25,6 +25,16 @@ export const CLIENTS_SEARCH_FIELDS = gql`
         address
         cellphone
         email
+        city
+        state {
+            id
+            name
+            shortCode
+            cities {
+                id
+                name
+            }
+        }
     }
   }
 `;
