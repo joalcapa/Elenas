@@ -8,6 +8,9 @@ import Button from '../../../../../components/commons/Button';
 import InputField from '../../../../../components/commons/InputField';
 import styles from '../styles';
 
+/**
+ * Componente que permite llenar la informacion de la direccion del cliente.
+ */
 const AddressForm = (props) => (
     <View style={styles.container}>
         <View style={styles.content}>
@@ -55,18 +58,57 @@ const AddressForm = (props) => (
 );
 
 AddressForm.propTypes = {
+    /**
+     * Ciudad del cliente.
+     */
     city: PropTypes.string,
+    /**
+     * Pais del cliente.
+     */
     country: PropTypes.string,
+    /**
+     * Nombre del departamento del cliente.
+     */
     stateName: PropTypes.string,
+    /**
+     * Direccion del cliente.
+     */
     streetAddress: PropTypes.string,
+    /**
+     * Array de los departamentos del formulario.
+     */
     statesForm: PropTypes.array,
+    /**
+     * Array de las ciudades del departamento seleccionado del formulario.
+     */
     citiesForm: PropTypes.array,
+    /**
+     * Funcion de seleccion del departamento.
+     */
     onSelectStateForm: PropTypes.func,
+    /**
+     * Funcion de seleccion de la ciudad del departamento.
+     */
     onSelectCityForm: PropTypes.func,
+    /**
+     * Funcion que cambio el valor de la direccion.
+     */
     changeStreetAddress: PropTypes.func,
+    /**
+     * Funcion que cambia el valor del pais.
+     */
     changeCountry: PropTypes.func,
+    /**
+     * Funcion que crea al cliente.
+     */
     createCustomer: PropTypes.func,
+    /**
+     * Identifica si el formulario de la direccion es valido.
+     */
     isValidAddressForm: PropTypes.bool,
+    /**
+     * Identifica si se edita al cliente.
+     */
     isEdit: PropTypes.bool,
 };
 

@@ -8,6 +8,9 @@ import Button from '../../../../components/commons/Button';
 
 import styles from './styles';
 
+/**
+ * Este componente permite listar la informacion de los usuarios.
+ */
 const ItemList = (props) => (
     <View style={styles.contain}>
         <View style={styles.BoxOne}>
@@ -41,14 +44,41 @@ const ItemList = (props) => (
 );
 
 ItemList.propTypes = {
+    /**
+     * Valor del id del cliente.
+     */
     id: PropTypes.any,
+    /**
+     * Nombre del cliente.
+     */
     firstName: PropTypes.string,
+    /**
+     * Apellido del cliente.
+     */
     lastName: PropTypes.string,
+    /**
+     * Cedula del cliente.
+     */
     cedula: PropTypes.string,
+    /**
+     * Correo del cliente .
+     */
     email: PropTypes.string,
+    /**
+     * Direccion del cliente.
+     */
     address: PropTypes.string,
+    /**
+     * Telefono del cliente.
+     */
     cellphone: PropTypes.string,
+    /**
+     * Permite indicar si se editara el cliente.
+     */
     isEdit: PropTypes.bool,
+    /**
+     * Funcion que edita el cliente.
+     */
     onPress: PropTypes.func,
 };
 
@@ -85,6 +115,9 @@ const Component = (props) => {
 };
 
 Component.propTypes = {
+    /**
+     * Array de clientes.
+     */
     customers: PropTypes.array,
 };
 

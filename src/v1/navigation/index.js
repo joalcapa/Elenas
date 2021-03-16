@@ -13,6 +13,9 @@ import Edit from '../scenes/logged/customers/edit';
 import Login from '../scenes/auth/login';
 import Middleware from './middleware';
 
+/**
+ * Componente que establece el sistema de navegacion.
+ */
 const Navigation = () => (
     <Router>
         <Switch>

@@ -40,6 +40,9 @@ Create.propTypes = {
      * Define si el componente funciona como editor de un cliente ya creado, en caso contrario creara un nuevo cliente.
      */
     isEdit: PropTypes.bool,
+    /**
+     * Id del cliente.
+     */
     customerId: PropTypes.string,
 };
 

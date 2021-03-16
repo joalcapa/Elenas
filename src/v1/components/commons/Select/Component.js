@@ -7,6 +7,9 @@ import Button from '../../../components/commons/Button';
 
 import styles from './styles';
 
+/**
+ * Componente que renderiza los items de un select basico.
+ */
 const Component = (props) => (
     <>
         <Modal
