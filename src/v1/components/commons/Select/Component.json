@@ -1,5 +1,5 @@
 {
-  "description": "",
+  "description": "Componente que renderiza los items de un select basico.",
   "displayName": "Component",
   "methods": [],
   "props": {

@@ -1,0 +1,29 @@
+{
+  "description": "Este componente permite crear o editar un cliente.",
+  "displayName": "Create",
+  "methods": [],
+  "props": {
+    "isEdit": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Define si el componente funciona como editor de un cliente ya creado, en caso contrario creara un nuevo cliente.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    },
+    "customerId": {
+      "type": {
+        "name": "string"
+      },
+      "required": false,
+      "description": "Id del cliente.",
+      "defaultValue": {
+        "value": "''",
+        "computed": false
+      }
+    }
+  }
+}

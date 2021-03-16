@@ -35,6 +35,17 @@
         "value": "() => {}",
         "computed": false
       }
+    },
+    "isPassword": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
     }
   }
 }

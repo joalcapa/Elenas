@@ -1,5 +1,5 @@
 {
-  "description": "Este componente renderiza un boton basico que ejecuta una funcion y se puede deshabilitar",
+  "description": "Este componente renderiza un boton basico que ejecuta una funcion y se puede deshabilitar.",
   "displayName": "Button",
   "methods": [],
   "props": {
@@ -53,6 +53,17 @@
       },
       "required": false,
       "description": "Se deshabilita el boton.",
+      "defaultValue": {
+        "value": "false",
+        "computed": false
+      }
+    },
+    "isWhiteButton": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "El boton cambia a color blanco.",
       "defaultValue": {
         "value": "false",
         "computed": false

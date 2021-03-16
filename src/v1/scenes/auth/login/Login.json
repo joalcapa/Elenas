@@ -1,5 +1,5 @@
 {
-  "description": "Este componente permite hacer login y guardar la informacion del usuario en el storage.",
+  "description": "Este componente permite hacer login, guardar la informacion del usuario en el storage y navegar al listado de los clientes.",
   "displayName": "Login",
   "methods": []
 }

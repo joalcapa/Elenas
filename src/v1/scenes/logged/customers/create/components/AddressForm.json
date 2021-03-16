@@ -1,69 +1,135 @@
 {
-  "description": "Este componente permite enviar el formulario para crear o editar un cliente.",
-  "displayName": "Form",
+  "description": "Componente que permite llenar la informacion de la direccion del cliente.",
+  "displayName": "AddressForm",
   "methods": [],
   "props": {
-    "firstName": {
+    "city": {
       "type": {
         "name": "string"
       },
       "required": false,
-      "description": "Valor del nombre.",
+      "description": "Ciudad del cliente.",
       "defaultValue": {
         "value": "''",
         "computed": false
       }
     },
-    "lastName": {
+    "country": {
       "type": {
         "name": "string"
       },
       "required": false,
-      "description": "Valor del apellido.",
+      "description": "Pais del cliente.",
       "defaultValue": {
         "value": "''",
         "computed": false
       }
     },
-    "cedula": {
+    "stateName": {
       "type": {
         "name": "string"
       },
       "required": false,
-      "description": "Valor de la cedula.",
+      "description": "Nombre del departamento del cliente.",
       "defaultValue": {
         "value": "''",
         "computed": false
       }
     },
-    "email": {
+    "streetAddress": {
       "type": {
         "name": "string"
       },
       "required": false,
-      "description": "Valor del correo.",
+      "description": "Direccion del cliente.",
       "defaultValue": {
         "value": "''",
         "computed": false
       }
     },
-    "cellphone": {
+    "statesForm": {
       "type": {
-        "name": "string"
+        "name": "array"
       },
       "required": false,
-      "description": "Valor del telefono.",
+      "description": "Array de los departamentos del formulario.",
       "defaultValue": {
-        "value": "''",
+        "value": "[]",
         "computed": false
       }
     },
-    "isValidForm": {
+    "citiesForm": {
+      "type": {
+        "name": "array"
+      },
+      "required": false,
+      "description": "Array de las ciudades del departamento seleccionado del formulario.",
+      "defaultValue": {
+        "value": "[]",
+        "computed": false
+      }
+    },
+    "onSelectStateForm": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion de seleccion del departamento.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "onSelectCityForm": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion de seleccion de la ciudad del departamento.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changeStreetAddress": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambio el valor de la direccion.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "changeCountry": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que cambia el valor del pais.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "createCustomer": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Funcion que crea al cliente.",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      }
+    },
+    "isValidAddressForm": {
       "type": {
         "name": "bool"
       },
       "required": false,
-      "description": "Define si el formulario es valido para enviar.",
+      "description": "Identifica si el formulario de la direccion es valido.",
       "defaultValue": {
         "value": "false",
         "computed": false
@@ -74,98 +140,22 @@
         "name": "bool"
       },
       "required": false,
-      "description": "Define si el formulario es para edicion.",
+      "description": "Identifica si se edita al cliente.",
       "defaultValue": {
         "value": "false",
         "computed": false
       }
     },
-    "changeFirstName": {
+    "onBack": {
       "type": {
         "name": "func"
       },
       "required": false,
-      "description": "Funcion que cambia el valor del nombre.",
+      "description": "Funcion que permite volver al formulario del cliente.",
       "defaultValue": {
         "value": "() => {}",
         "computed": false
       }
-    },
-    "changeLastName": {
-      "type": {
-        "name": "func"
-      },
-      "required": false,
-      "description": "Funcion que cambia el valor del apellido.",
-      "defaultValue": {
-        "value": "() => {}",
-        "computed": false
-      }
-    },
-    "changeCedula": {
-      "type": {
-        "name": "func"
-      },
-      "required": false,
-      "description": "Funcion que cambia el valor de la cedula.",
-      "defaultValue": {
-        "value": "() => {}",
-        "computed": false
-      }
-    },
-    "changeEmail": {
-      "type": {
-        "name": "func"
-      },
-      "required": false,
-      "description": "Funcion que cambia el valor del correo.",
-      "defaultValue": {
-        "value": "() => {}",
-        "computed": false
-      }
-    },
-    "changeCellphone": {
-      "type": {
-        "name": "func"
-      },
-      "required": false,
-      "description": "Funcion que cambia el valor del telefono.",
-      "defaultValue": {
-        "value": "() => {}",
-        "computed": false
-      }
-    },
-    "nextAddressSelect": {
-      "type": {
-        "name": "func"
-      },
-      "required": false,
-      "description": "Funcion que muestra el formulario de direccion.",
-      "defaultValue": {
-        "value": "() => {}",
-        "computed": false
-      }
-    },
-    "states": {
-      "defaultValue": {
-        "value": "[]",
-        "computed": false
-      },
-      "required": false
-    },
-    "address": {
-      "defaultValue": {
-        "value": "''",
-        "computed": false
-      },
-      "required": false
-    },
-    "changeAddress": {
-      "defaultValue": {
-        "value": "() => {}",
-        "computed": false
-      },
-      "required": false
     }
   }
 }

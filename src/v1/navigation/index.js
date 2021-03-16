@@ -1,17 +1,15 @@
 import React from 'react';
-import {View} from 'react-native'
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
-  } from "react-router-dom";
+} from "react-router-dom";
 
 import List from '../scenes/logged/customers/list';  
 import Create from '../scenes/logged/customers/create';
 import Edit from '../scenes/logged/customers/edit';
 import Login from '../scenes/auth/login';
-import Middleware from './middleware';
+import Middleware from './Middleware';
 
 /**
  * Componente que establece el sistema de navegacion.
@@ -35,4 +33,4 @@ const Navigation = () => (
     </Router>
 );
 
-  export default Navigation;
+export default Navigation;

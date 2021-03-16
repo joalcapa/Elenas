@@ -1,0 +1,18 @@
+{
+  "description": "",
+  "displayName": "Component",
+  "methods": [],
+  "props": {
+    "customers": {
+      "type": {
+        "name": "array"
+      },
+      "required": false,
+      "description": "Array de clientes.",
+      "defaultValue": {
+        "value": "[]",
+        "computed": false
+      }
+    }
+  }
+}
