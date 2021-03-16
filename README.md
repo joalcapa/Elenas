@@ -86,3 +86,6 @@ Test Suites: 12
 Tests: 59
 
 Snapshots: 34
+
+## Documentacion
+Este repositorio cuenta con la documentacion de todos los componentes mediante archivos json, generados con react-docgen.
