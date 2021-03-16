@@ -1,5 +1,8 @@
 import {LOGIN} from '../src/kernel/v1/gql/mutations';
+import {STATES} from '../src/kernel/v1/gql/queries';
+
 import {customers} from './customers';
+import {states} from './states';
 
 export const responseGpql = [
     {
@@ -32,6 +35,16 @@ export const responseGpql = [
                 login: {
                     __typename: 'ValidationErrors',
                 },
+            },
+        },
+    },
+    {
+        request: {
+            query: STATES,
+        },
+        result: {
+            data: {
+                states: states,
             },
         },
     },
