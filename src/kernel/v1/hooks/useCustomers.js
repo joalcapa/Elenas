@@ -68,7 +68,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
     }, [clientsSearch]);
 
     useEffect(() => {
-        if (statesForm.length === 0) {
+        if (statesForm.length === 0 && states.length > 0) {
             setStatesForm(
                 states.map((stateForm) => {
                     return {
