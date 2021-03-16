@@ -56,7 +56,40 @@ export const responseGpql = [
         },
         result: {
             data: {
-                clientsSearch: customers,
+                currentPage: 1,
+                totalPages: 1,
+                clientsSearch: [
+                    {
+                        ...customers[0],
+                        city: 'Test city',
+                        state: {
+                            id: 1,
+                            name: 'Test state',
+                            shortCode: 'Test ShortCode',
+                            cities: [
+                                {
+                                    id: 3,
+                                    name: 'Test city',
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        ...customers[1],
+                        city: 'Test city',
+                        state: {
+                            id: 1,
+                            name: 'Test state',
+                            shortCode: 'Test ShortCode',
+                            cities: [
+                                {
+                                    id: 3,
+                                    name: 'Test city',
+                                },
+                            ],
+                        },
+                    },
+                ],
             },
         },
     },
@@ -64,12 +97,30 @@ export const responseGpql = [
         request: {
             query: CLIENTS_SEARCH,
             variables: {
-                ids: [customer.id]
-            }
+                ids: [1],
+            },
         },
         result: {
             data: {
-                clientsSearch: [customer],
+                currentPage: 1,
+                totalPages: 1,
+                clientsSearch: [
+                    {
+                        ...customer,
+                        city: 'Test city',
+                        state: {
+                            id: 1,
+                            name: 'Test state',
+                            shortCode: 'Test ShortCode',
+                            cities: [
+                                {
+                                    id: 3,
+                                    name: 'Test city',
+                                },
+                            ],
+                        },
+                    },
+                ],
             },
         },
     },

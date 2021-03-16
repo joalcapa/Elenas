@@ -12,6 +12,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
     const [UpdateClient, resultUpdateClient] = useMutation(UPDATE_CLIENT);
 
     const [isCustomerCreate, setCustomerCreate] = useState(false);
+    const [isCustomerEdit, setCustomerEdit] = useState(false);
     const [isAddressSelect, setAddressSelect] = useState(false);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -31,6 +32,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
     const [citiesForm, setCitiesForm] = useState([]);
 
     useEffect(() => {
+        console.log('Cs: ', clientsSearch);
         if (
             isEdit &&
             clientsSearch &&
@@ -98,6 +100,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
             resultUpdateClient.data.updateClient
         ) {
             onSuccessful();
+            setCustomerEdit(true);
         }
     }, [resultUpdateClient]);
 
@@ -295,6 +298,7 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
             !isError
         ),
         isCustomerCreate,
+        isCustomerEdit,
         isAddressSelect,
         nextForm,
         nextAddressSelect,

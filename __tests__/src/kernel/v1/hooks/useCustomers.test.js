@@ -59,9 +59,22 @@ describe('Create and Edit', () => {
         expect(result.current.stateId).toBe(2);
     });
 
+    test('list clients', async () => {
+        const {result, waitForValueToChange} = renderHook(
+            () => useCustomers(),
+            {wrapper},
+        );
+
+        expect(result.current.customers.length).toBe(0);
+
+        await waitForValueToChange(() => result.current.customers);
+
+        expect(result.current.customers.length).toBe(customers.length);
+    });
+
     test('create client', async () => {
         const onSuccessfulEvent = jest.fn();
-        onSuccessfulEvent.mockReturnValue('Link on press invoked');
+        onSuccessfulEvent.mockReturnValue('onSuccessful invoked');
         const {result, waitForNextUpdate} = renderHook(
             () => useCustomers(false, onSuccessfulEvent),
             {wrapper},
@@ -91,6 +104,34 @@ describe('Create and Edit', () => {
         await waitForNextUpdate();
 
         expect(result.current.isCustomerCreate).toBe(true);
-        expect(onSuccessfulEvent.mock.results[0].value).toBe('Link on press invoked');
+        expect(onSuccessfulEvent.mock.results[0].value).toBe('onSuccessful invoked');
+    });
+
+    test('edit client', async () => {
+        const customer = customers[0];
+        const onSuccessfulEvent = jest.fn();
+        onSuccessfulEvent.mockReturnValue('onSuccessful invoked');
+        const {result, waitForValueToChange, waitForNextUpdate} = renderHook(
+            () => useCustomers(true, onSuccessfulEvent, customer.id),
+            {wrapper},
+        );
+
+        await waitForValueToChange(() => result.current.city);
+
+        expect(result.current.firstName).toBe(customer.firstName);
+        expect(result.current.lastName).toBe(customer.lastName);
+        expect(result.current.cedula).toBe(customer.cedula);
+        expect(result.current.cellphone).toBe(customer.cellphone);
+
+        act(() => {
+            result.current.changeCellphone('+3500000');
+        });
+
+        act(() => {
+            result.current.createCustomer();
+        });
+
+        expect(result.current.isCustomerEdit).toBe(true);
+        expect(onSuccessfulEvent.mock.results[0].value).toBe('onSuccessful invoked');
     });
 });
