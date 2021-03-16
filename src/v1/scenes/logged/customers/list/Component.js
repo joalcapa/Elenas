@@ -14,7 +14,7 @@ import styles from './styles';
 const ItemList = (props) => (
     <View style={styles.contain}>
         <View style={styles.BoxOne}>
-            <TextField text={props.id} style={styles.textBox} type={EXTRA_TYPE}/>
+            <TextField text={`${props.id}`} style={styles.textBox} type={EXTRA_TYPE}/>
         </View>
         <View style={styles.BoxOne}>
             <TextField text={props.firstName} style={styles.textBox} type={EXTRA_TYPE} />
@@ -105,7 +105,8 @@ const Component = (props) => {
         <View style={styles.container}>
             <ItemList />
             {props.customers.map((customer) =>
-                <ItemList 
+                <ItemList
+                    key={`Customer${customer.id}`}
                     isEdit 
                     {...customer} 
                     onPress={() => toCustomerEdit(customer.id)} 
