@@ -9,11 +9,13 @@ const useLogin = () => {
     const [cellphone, setCellphone] = useState('');
     const [password, setPassword] = useState('');
     const [isError, setError] = useState(false);
+    const [isSuccesfull, setSuccesfull] = useState(false);
     const [Login, result] = useMutation(LOGIN);
 
     useEffect(() => {
         if (result && result.data && !user) {
             if (result.data.login && result.data.login.user) {
+                setSuccesfull(true);
                 updateUser({
                     ...result.data.login.user,
                     authToken: result.data.login.token,
@@ -49,9 +51,10 @@ const useLogin = () => {
     }, [cellphone, password]);
 
     return {
+        isSuccesfull,
         cellphone,
         password,
-        isValidForm: (cellphone && password && !isError),
+        isValidForm: (cellphone !== '' && password !== '' && !isError),
         isError,
         changeCellphone,
         changePassword,
