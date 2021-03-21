@@ -1,36 +1,15 @@
-import {useState, useCallback, useEffect} from 'react';
+import {useState, useCallback, useEffect, useMemo} from 'react';
 import {useMutation, useQuery} from '@apollo/client';
 
 import useStates from './useStates';
-import {CREATE_CLIENT, UPDATE_CLIENT} from '../gql/mutations';
+import {updateCacheCreateClient} from '../utils';
 import {CLIENTS_SEARCH} from '../gql/queries';
-import {CLIENT_FIELDS} from '../gql/fragments';
+import {CREATE_CLIENT, UPDATE_CLIENT} from '../gql/mutations';
 
 const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') => {
     const {states} = useStates();
-    const clientsSearch = useQuery(CLIENTS_SEARCH, customerId !== '' ? {variables: {ids: [parseInt(customerId)]}} : {variables: {page: 0}});
-    const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT, {
-        update(cache, {data: {createClient}}) {
-            cache.modify({
-                fields: {
-                    clientsSearch(existingClients = []) {
-                        const newClientRef = cache.writeFragment({
-                            data: createClient,
-                            fragment: CLIENT_FIELDS,
-                        });
-
-                        return {
-                            ...existingClients,
-                            results: [
-                                newClientRef,
-                                ...existingClients.results
-                            ],
-                        };
-                    }
-                }
-            });
-        }
-    });
+    const clientsSearch = useQuery(CLIENTS_SEARCH, customerId !== '' ? {variables: {ids: [parseInt(customerId)]}} : null);
+    const [CreateClient, resultCreateClient] = useMutation(CREATE_CLIENT, updateCacheCreateClient);
     const [UpdateClient, resultUpdateClient] = useMutation(UPDATE_CLIENT);
 
     const [isCustomerCreate, setCustomerCreate] = useState(false);
@@ -280,13 +259,37 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
         CreateClient,
     ]);
 
+    const isValidForm = useMemo(() => {
+        return (
+            firstName &&
+            lastName &&
+            cedula &&
+            email &&
+            cellphone &&
+            !isError
+        );
+    }, [firstName, lastName, cedula, email, cellphone, isError]);
+
+    const isValidAddressForm = useMemo(() => {
+        return (
+            streetAddress &&
+            country &&
+            stateName &&
+            city &&
+            !isError
+        );
+    }, [streetAddress, country, stateName, city, isError]);
+
+    const customers = useMemo(() => {
+        return clientsSearch &&
+        clientsSearch.data &&
+        clientsSearch.data.clientsSearch &&
+        clientsSearch.data.clientsSearch.results ?
+            clientsSearch.data.clientsSearch.results : [];
+    }, [clientsSearch]);
+
     return {
-        customers:
-            clientsSearch &&
-            clientsSearch.data &&
-            clientsSearch.data.clientsSearch &&
-            clientsSearch.data.clientsSearch.results ?
-                clientsSearch.data.clientsSearch.results : [],
+        customers,
         statesForm,
         citiesForm,
         firstName,
@@ -303,21 +306,8 @@ const useCustomers = (isEdit = false, onSuccessful = () => {}, customerId = '') 
         country,
         isError,
         stateName,
-        isValidForm: (
-            firstName &&
-            lastName &&
-            cedula &&
-            email &&
-            cellphone &&
-            !isError
-        ),
-        isValidAddressForm: (
-            streetAddress &&
-            country &&
-            stateName &&
-            city &&
-            !isError
-        ),
+        isValidForm,
+        isValidAddressForm,
         isCustomerCreate,
         isCustomerEdit,
         isAddressSelect,
